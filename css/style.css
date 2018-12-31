@@ -23,3 +23,775 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/*Шапка Главной страницы (main/header)*/
+
+.logo span:nth-child(1) {
+    font-family: "Podkova";
+    font-size: 19.72px;
+    line-height: 19.72px;
+    color: #ff9001;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.logo span:nth-child(2) {
+    font-family: "Podkova";
+    font-size: 62.1px;
+    line-height: 42.41px;
+    color: #ff9001;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.logo span:nth-child(3) {
+    font-family: "Podkova";
+    font-size: 12.57px;
+    line-height: 19.72px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.0600em;
+}
+
+.communication a[href*="tel"] {
+    font-size: 33px;
+    line-height: 19.72px;
+    color: #ff692a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.communication a[href*="mail"] {
+    font-size: 17px;
+    line-height: 19.72px;
+    color: #ff9001;
+    font-weight: 300;
+    letter-spacing: 0.050em;
+}
+
+.menu a {
+    font-size: 17px;
+    line-height: 19.72px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu span {
+    font-size: 17px;
+    line-height: 19.72px;
+    color: #ff9001;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.login span:nth-child(1) {
+    font-size: 50px;
+    line-height: 80px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.login span:nth-child(2) {
+    font-family: "Podkova";
+    font-size: 133px;
+    line-height: 133px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login span:nth-child(3) {
+    font-size: 25px;
+    line-height: 70px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.0350em;
+}
+
+.login span:nth-child(4) {
+    font-size: 25px;
+    line-height: 70px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.0350em;
+    font-weight: 600;
+}
+
+.logButtons :nth-child(1) {
+    font-size: 17px;
+    line-height: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.logButtons :nth-child(2) {
+    font-size: 17px;
+    line-height: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+/*Контент Главной страницы : Блок Баннер (main/banner)*/
+
+.h3whiteLight {
+    font-size: 18px;
+    line-height: 70px;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.0150em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h2whiteBold {
+    font-size: 50px;
+    line-height: 70px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+
+.card li span:nth-child(1) {
+    font-size: 70px;
+    line-height: 40px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.card li span:nth-child(2) {
+    /*Иконока карточки*/
+}
+
+.card li span:nth-child(3) {
+    font-size: 45px;
+    line-height: 40px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.card li span:nth-child(4) {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ff692a;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+}
+
+.card li span:nth-child(5) {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ff692a;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+/*Калькулятор Прибыли (main/calculator)*/
+
+.h3blackLight {
+    font-size: 18px;
+    line-height: 70px;
+    color: #05141b;
+    font-weight: 300;
+    letter-spacing: 0.0150em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h2blackBold {
+    font-size: 50px;
+    line-height: 70px;
+    color: #05141b;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+
+.calculator label {
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.calcResult li span:nth-child(1) {
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+}
+
+.calcResult li span:nth-child(2) {
+    font-size: 24px;
+    line-height: 30px;
+    color: #05141b;
+    font-weight: 600;
+}
+
+.calcResult .whiteResult span:nth-child(1) {
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.calcResult .whiteResult span:nth-child(2) {
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.blackTxt {
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+}
+
+.calcAction button {
+    font-size: 17px;
+    line-height: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.050em;
+    text-transform: uppercase;
+}
+
+/*Блок "О нас" (main/About)*/
+
+.license span {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.license p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+}
+
+.license .checkCompany span:nth-child(1) {
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+}
+
+.license .checkCompany span:nth-child(3) {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff9001;
+}
+
+.license .checkCompany span:nth-child(5) {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff9001;
+}
+
+.license .checkCompany p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.checkCompany a {
+    font-size: 17px;
+    line-height: 100px;
+    color: #ffffff;
+    letter-spacing: 0.050em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*Блок преимущества (mail/advantages)*/
+
+.container li span:nth-child(2) {
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.container li p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    font-weight: 300;
+}
+
+/*Призыв к регистрации (main/signUp)*/
+
+.signUp span:nth-child(2) {
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.signUp span:nth-child(3) {
+    font-size: 30px;
+    line-height: 50px;
+    color: #06151c;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+}
+
+.signUp button {
+    font-size: 24px;
+    line-height: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+/*Блок с активностью (main/action)*/
+
+.iconCaps {
+    font-size: 25px;
+    line-height: 48px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.action .lastDeposits span:nth-child(1) {
+    font-size: 15px;
+    line-height: 40px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+}
+
+.action .lastDeposits span:nth-child(2) {
+    font-size: 15px;
+    line-height: 40px;
+    color: #ff692a;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.wheel span:nth-child(1) {
+    font-size: 25px;
+    line-height: 32.42px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.wheel span:nth-child(2) {
+    font-size: 15px;
+    line-height: 24.32px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+}
+
+.action .lastWithdrawals span:nth-child(1) {
+    font-size: 15px;
+    line-height: 40px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+}
+
+.action .lastWithdrawals span:nth-child(2) {
+    font-size: 15px;
+    line-height: 40px;
+    color: #ff692a;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.action .info span {
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+}
+
+.action .graph {
+    /*ГРАФИК*/
+}
+
+/*Реферальный бонус (main/referal)*/
+
+.textBlock p:nth-child(1) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.h2grad {
+    font-size: 40px;
+    line-height: 30px;
+    /*ГРАДИЕНТ*/
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 600
+}
+
+.referal button {
+    font-size: 24px;
+    line-height: 100px;
+    /*ГРАДИЕНТ*/
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 600
+}
+
+/*Блок оплаты (main/payments)*/
+
+/*Блок с картой (main/map)*/
+
+/*Подвал (main/footer)*/
+
+.footer .copyright span {
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+}
+
+.footMenu a {
+    font-size: 15px;
+    line-height: 50px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footMenu span {
+    font-size: 15px;
+    line-height: 50px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footContact span {
+    font-size: 15px;
+    line-height: 21px;
+    color: #ff9001;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.footContact p {
+    font-size: 15px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.footContact a:nth-child(4) {
+    font-size: 15px;
+    line-height: 21px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+}
+
+.footContact a:nth-child(6) {
+    font-size: 15px;
+    line-height: 21px;
+    color: #ff6b28;
+    letter-spacing: 0.025em;
+}
+
+/*Страница =Referral=*/
+
+/*Шапка Реферала (referral/header)*/
+
+.exit span:nth-child(1) {
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+}
+
+.exit span:nth-child(2) {
+    font-size: 17px;
+    line-height: 30px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+}
+
+/*Контент страницы Referral (refferal/Content)*/
+
+.content .user span:nth-child(odd) {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+}
+
+.content .user span:nth-child(even) {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.content .user a {
+    font-size: 15px;
+    line-height: 30px;
+    color: #ff692a;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.lastSeen span:nth-child(odd) {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+}
+
+.lastSeen span:nth-child(even) {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.depWidth button {
+    font-size: 24px;
+    line-height: 100px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.balance > div:nth-child(2) span:nth-child(1) {
+    font-size: 20px;
+    line-height: 53px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.balance > div:nth-child(2) span:nth-child(2) {
+    font-size: 30px;
+    line-height: 40px;
+    color: #ff9001;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+/*Иконка валюты*/
+
+.balance ul span:nth-child(2) {
+    font-size: 20px;
+    line-height: 53px;
+    color: #ff9001;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+/*Меню внутри контента*/
+
+.contentMenu a {
+    font-size: 15px;
+    line-height: 19.72px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contentMenu li:nth-child(7) a {
+    font-size: 15px;
+    line-height: 19.72px;
+    color: #05141b;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.h1RefWhite {
+    font-size: 40px;
+    line-height: 70px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Карточки статистики*/
+
+/*фото*/
+
+.h3RefWhiteBold {
+    font-size: 24px;
+    line-height: 70px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    /*text-align: center;*/
+    font-weight: 600;
+}
+
+.upLine a {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.stat li span:nth-child(1) {
+    font-size: 15px;
+    line-height: 80px;
+    color: #ff9001;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    /*text-align: left;*/
+}
+
+.stat li span:nth-child(2) {
+    font-size: 20px;
+    line-height: 80px;
+    color: #ff692a;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    /*text-align: right;*/
+}
+
+.refIns label {
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.content .refDate .RefTableSpan {
+    font-size: 15px;
+    line-height: 50px;
+    color: #05141b;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.refDate li span:nth-child(1) {
+    font-size: 15px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.refDate li span:nth-child(2) {
+    font-size: 17px;
+    line-height: 50px;
+    color: #ff9001;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.refDate li span:nth-child(3) {
+    font-size: 17px;
+    line-height: 50px;
+    color: #ff692a;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+/*Таблица с рефералами клиента*/
+
+.yrRefTable li span:nth-child(1), li span:nth-child(3), li span:nth-child(5) {
+    font-size: 17px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+ .yrRefTable li span:nth-child(2) {
+    font-size: 17px;
+    line-height: 50px;
+    color: #ff692a;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+
+.yrRefTable li a {
+    font-size: 15px;
+    line-height: 50px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+}
+
+.yrRefTable li span:nth-child(6) {
+    font-size: 17px;
+    line-height: 50px;
+    color: #bebebe;
+    letter-spacing: 0.025em;
+}
+
+/*Кнопки навигации*/
+
+.navigate li a {
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+}
+
+.navigate li span {
+    font-size: 17px;
+    line-height: 30px;
+    color: #000000;
+    letter-spacing: 0.025em;
+}
+
+/*footer страницы Referral*/
+
+.footer p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+}
