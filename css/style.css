@@ -408,6 +408,14 @@ ul {
     letter-spacing: 0.025em;
 }
 
+.wheel:nth-child(1) {
+    width: 470px;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .action .lastWithdrawals span:nth-child(1) {
     font-size: 15px;
     line-height: 40px;
@@ -548,6 +556,14 @@ ul {
 
 /*Контент страницы Referral (refferal/Content)*/
 
+.userPhoto {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .content .user span:nth-child(odd) {
     font-size: 15px;
     line-height: 20px;
@@ -656,7 +672,13 @@ ul {
 
 /*Карточки статистики*/
 
-/*фото*/
+.uplineUserPhoto {
+    width: 84px;
+    height: 84px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .h3RefWhiteBold {
     font-size: 24px;
