@@ -172,7 +172,7 @@ ul {
 }
 
 .card li span:nth-child(2) {
-    /*Иконока карточки*/
+    /*картинка*/
 }
 
 .card li span:nth-child(3) {
@@ -323,7 +323,7 @@ ul {
 
 /*Блок преимущества (mail/advantages)*/
 
-.container li span:nth-child(2) {
+.leftAdv li span:nth-child(2), .rightAdv li span:nth-child(2) {
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
@@ -331,7 +331,7 @@ ul {
     text-transform: uppercase;
 }
 
-.container li p {
+.leftAdv li p, .rightAdv li p {
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
@@ -634,6 +634,7 @@ ul {
     font-size: 20px;
     line-height: 53px;
     color: #ff9001;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.025em;
 }
@@ -690,7 +691,7 @@ ul {
     font-weight: 600;
 }
 
-.upLine a {
+.upline a {
     font-size: 20px;
     line-height: 24px;
     color: #ff9001;
@@ -769,7 +770,7 @@ ul {
     letter-spacing: 0.025em;
 }
 
- .yrRefTable li span:nth-child(2) {
+.yrRefTable li span:nth-child(2) {
     font-size: 17px;
     line-height: 50px;
     color: #ff692a;
@@ -816,4 +817,5 @@ ul {
     line-height: 24px;
     color: #ffffff;
     letter-spacing: 0.025em;
+    text-align: center;
 }
