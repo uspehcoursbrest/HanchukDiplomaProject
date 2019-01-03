@@ -10,45 +10,47 @@
 <body>
 <!--Шапка страницы-->
 <header>
-    <div class="container">
-        <div class="logo">
-            <img src="img/png/logoGrad.png" alt="logo">
-            <div>
-                <span>atlantic</span>
-                <span>Oil</span>
-                <span>limited</span>
+    <div class="headerImg" style="background-image: url(img/jpeg/header.jpg)">
+        <div class="container">
+            <div class="logo">
+                <img src="img/png/logoGrad.png" alt="logo">
+                <div>
+                    <span>atlantic</span>
+                    <span>Oil</span>
+                    <span>limited</span>
+                </div>
             </div>
-        </div>
-        <div class="communication">
-            <a href="#" class="icon-soc">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-            </a>
-            <div class="tel">
-                <a href="tel:+44 7911 123-456">
-                    <span>+44 7911</span>
-                    <span> 123-456</span>
+            <div class="communication">
+                <a href="#" class="icon-soc">
+                    <span class="path1"></span><span class="path2"></span><span class="path3"></span>
                 </a>
-                <a href="mailto:atlanticoil@support.cc">atlanticoil@support.cc</a>
+                <div class="tel">
+                    <a href="tel:+44 7911 123-456">
+                        <span>+44 7911</span>
+                        <span> 123-456</span>
+                    </a>
+                    <a href="mailto:atlanticoil@support.cc">atlanticoil@support.cc</a>
+                </div>
+                <a href="#" class="icon-phone"><span class="path1"></span><span class="path2"></span><span
+                        class="path3"></span><span class="path4"></span></a>
             </div>
-            <a href="#" class="icon-phone"><span class="path1"></span><span class="path2"></span><span
-                    class="path3"></span><span class="path4"></span></a>
+            <ul class="menu">
+                <li><span>home</span></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">referal program</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">faq</a></li>
+                <li><a href="#">terms</a></li>
+                <li><a href="#">rate us</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
         </div>
-        <ul class="menu">
-            <li><span>home</span></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">referal program</a></li>
-            <li><a href="#">news</a></li>
-            <li><a href="#">faq</a></li>
-            <li><a href="#">terms</a></li>
-            <li><a href="#">rate us</a></li>
-            <li><a href="#">support</a></li>
-        </ul>
     </div>
 </header>
 <!--Контент главной страницы-->
 <div class="content">
     <!--Блок баннер-->
-    <div class="banner">
+    <div class="banner" style="background-image: url(img/jpeg/banner.jpg)">
         <div class="container">
             <div class="login">
                 <span>Make right</span>
@@ -99,67 +101,70 @@
         </div>
     </div>
     <!--Калькулятор прибыли-->
-    <div class="calculator">
+    <div class="calculator" style="background-image: url(img/jpeg/calculator.jpg)">
         <div class="container">
             <h3 class="h3blackLight">your profit</h3>
             <h2 class="h2blackBold">Calculator</h2>
-            <div class="calcDep">
-                <div>
-                    <label for="plan">SELECT PLAN:</label>
-                    <select name="plan" id="plan">
-                        <!--Тут заселектим планы для выбора-->
-                        <option value="Plan 4 $ 2501 - $ 5000 180% After 5 Days" selected>Plan 4 $ 2501 - $ 5000 180%
-                            After 5 Days
-                        </option>
-                    </select>
+            <div class="calcImgSemiLight" style="background-image: url(img/png/calculator_semi_light.png)">
+                <div class="calcDep">
+                    <div>
+                        <label for="plan">SELECT PLAN:</label>
+                        <select name="plan" id="plan">
+                            <!--Тут заселектим планы для выбора-->
+                            <option value="Plan 4 $ 2501 - $ 5000 180% After 5 Days" selected>Plan 4 $ 2501 - $ 5000
+                                180%
+                                After 5 Days
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="enter">ENTER AMOUNT:</label>
+                        <input type="text" id="enter" name="enter">
+                    </div>
+                    <div>
+                        <span>Deposit amount:</span>
+                        <span>3001</span>
+                    </div>
                 </div>
-                <div>
-                    <label for="enter">ENTER AMOUNT:</label>
-                    <input type="text" id="enter" name="enter">
+                <div class="calcAmount">
+                    <label for="polzun">SELECT AMOUNT:</label>
+                    <!--Ползун-->
+                    <div>
+                        <input type="text" id="polzun" name="polzun">
+                    </div>
                 </div>
-                <div>
-                    <span>Deposit amount:</span>
-                    <span>3001</span>
+                <ul class="calcResult">
+                    <li>
+                        <span>Selected plan:</span>
+                        <span>Plan 4</span>
+                    </li>
+                    <li>
+                        <span>Deposit period:</span>
+                        <span>5 Days</span>
+                    </li>
+                    <li>
+                        <span>Deposit percent:</span>
+                        <span>180%</span>
+                    </li>
+                    <li class="whiteTxtResult">
+                        <span>Dayly profit:</span>
+                        <span>715.98 $</span>
+                    </li>
+                    <li class="whiteTxtResult">
+                        <span>Total profit:</span>
+                        <span>47335.60 $</span>
+                    </li>
+                </ul>
+                <div class="calcAction">
+                    <span class="blackTxtc">Get moneyAll payments are made after the end of the deposit period. </span>
+                    <span class="blackTxt">The deposit is included in the payments.</span>
+                    <button>get money</button>
                 </div>
-            </div>
-            <div class="calcAmount">
-                <label for="polzun">SELECT AMOUNT:</label>
-                <!--Ползун-->
-                <div>
-                    <input type="text" id="polzun" name="polzun">
-                </div>
-            </div>
-            <ul class="calcResult">
-                <li>
-                    <span>Selected plan:</span>
-                    <span>Plan 4</span>
-                </li>
-                <li>
-                    <span>Deposit period:</span>
-                    <span>5 Days</span>
-                </li>
-                <li>
-                    <span>Deposit percent:</span>
-                    <span>180%</span>
-                </li>
-                <li class="whiteResult">
-                    <span>Dayly profit:</span>
-                    <span>715.98 $</span>
-                </li>
-                <li class="whiteResult">
-                    <span>Total profit:</span>
-                    <span>47335.60 $</span>
-                </li>
-            </ul>
-            <div class="calcAction">
-                <span class="blackTxtc">Get moneyAll payments are made after the end of the deposit period. </span>
-                <span class="blackTxt">The deposit is included in the payments.</span>
-                <button>get money</button>
             </div>
         </div>
     </div>
     <!--Блок "О нас"-->
-    <div class="about">
+    <div class="about" style="background-image: url(img/jpeg/about.jpg)">
         <div class="container">
             <h3 class="h3whiteLight">atlantic oil limited</h3>
             <h2 class="h2whiteBold">About company</h2>
@@ -193,7 +198,7 @@
                     consectetur fringilla ligula eu pellentesque. Sed imperdiet est ac erat sollicitudin, condimentum
                     cursus risus porttitor. </p>
             </div>
-            <div class="videoPresentation">
+            <div class="videoPresentation" style="background-image: url(img/png/videoImg.png)">
                 <span class="icon-playVideo"><span class="path1"></span><span class="path2"></span></span>
                 <img src="" alt="">
                 <h3 class="h3whiteLight">atlantic oil limited</h3>
@@ -202,7 +207,7 @@
         </div>
     </div>
     <!--Преимущества-->
-    <div class="advantages">
+    <div class="advantages" style="background-image: url(img/jpeg/advantages.jpg)">
         <div class="container">
             <h3 class="h3blackLight">our advantages</h3>
             <h2 class="h2blackBold">Why choose us?</h2>
@@ -248,7 +253,7 @@
         </div>
     </div>
     <!--Призыв к регистрации-->
-    <div class="signUp">
+    <div class="signUp" style="background-image: url(img/jpeg/signUp.jpg)">
         <div class="container">
             <div>
                 <img src="img/png/logo.png" alt="">
@@ -261,7 +266,7 @@
         </div>
     </div>
     <!--Блок с активностью-->
-    <div class="action">
+    <div class="action" style="background-image: url(img/jpeg/action.jpg)">
         <div class="container">
             <div class="lastDep">
                 <span class="icon-lastDep"><span class="path1"></span><span class="path2"></span></span>
@@ -414,7 +419,7 @@
     </div>
 </div>
 <!--Реферальный бонус-->
-<div class="referal">
+<div class="referral" style="background-image: url(img/jpeg/referral.jpg)">
     <div class="container">
         <h3 class="h3blackLight">atlantic oil limited</h3>
         <h2 class="h2blackBold">Referal program</h2>
