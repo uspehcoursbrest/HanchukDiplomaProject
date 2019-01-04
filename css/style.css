@@ -24,13 +24,38 @@ ul {
     padding: 0 15px;
 }
 
-/*Шапка Главной страницы (main/header)*/
-
-header .headerImg {
-
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-header .logo span:nth-child(1) {
+button {
+    border: none;
+    cursor: pointer;
+}
+
+div.inline {
+    display: inline-block;
+}
+
+div.flex {
+    display: flex;
+}
+
+.taCenter {
+    text-align: center;
+}
+
+.bgFilling {
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*Шапка Главной страницы (main/header)*/
+
+
+.logoTxt div:nth-child(1) {
     font-family: "Podkova";
     font-size: 19.72px;
     line-height: 19.72px;
@@ -39,7 +64,7 @@ header .logo span:nth-child(1) {
     text-transform: uppercase;
 }
 
-header .logo span:nth-child(2) {
+.logoTxt div:nth-child(2) {
     font-family: "Podkova";
     font-size: 62.1px;
     line-height: 42.41px;
@@ -48,7 +73,7 @@ header .logo span:nth-child(2) {
     text-transform: uppercase;
 }
 
-header .logo span:nth-child(3) {
+.logoTxt div:nth-child(3) {
     font-family: "Podkova";
     font-size: 12.57px;
     line-height: 19.72px;
@@ -56,6 +81,12 @@ header .logo span:nth-child(3) {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.0600em;
+}
+
+.logo {
+    display: inline-block;
+    width: 50%;
+    float: left;
 }
 
 header .communication a[href*="tel"] {
@@ -72,6 +103,23 @@ header .communication a[href*="mail"] {
     color: #ff9001;
     font-weight: 300;
     letter-spacing: 0.050em;
+}
+
+header .communication {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+header a[class*="icon"] {
+    text-decoration: none;
+}
+
+header .tel a .small {
+    font-size: 12px;
+    line-height: 19.72px;
+    vertical-align: super;
+    letter-spacing: 0.2em;
 }
 
 header .menu a {
@@ -92,17 +140,24 @@ header .menu span {
     font-weight: 600;
 }
 
-header .login span:nth-child(1) {
+header .menu ul li {
+    display: inline-block;
+    margin: 30px;
+
+}
+
+/*Контент Главной страницы : Блок Баннер (main/banner)*/
+
+.headline div:nth-child(1) {
     font-size: 50px;
     line-height: 80px;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.025em;
     font-weight: 600;
-    text-align: left;
 }
 
-header .login span:nth-child(2) {
+.headline div:nth-child(2) {
     font-family: "Podkova";
     font-size: 133px;
     line-height: 133px;
@@ -110,10 +165,9 @@ header .login span:nth-child(2) {
     text-transform: uppercase;
     letter-spacing: 0.025em;
     font-weight: 600;
-    text-align: center;
 }
 
-header .login span:nth-child(3) {
+.headline div:nth-child(3) {
     font-size: 25px;
     line-height: 70px;
     color: #ffffff;
@@ -121,32 +175,31 @@ header .login span:nth-child(3) {
     letter-spacing: 0.0350em;
 }
 
-header .login span:nth-child(4) {
-    font-size: 25px;
-    line-height: 70px;
+.logButtons .btnFillColor1 {
+    font-family: "Roboto Slab";
+    font-size: 17px;
     color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.025em;
     text-transform: uppercase;
-    letter-spacing: 0.0350em;
-    font-weight: 600;
+    width: 200px;
+    height: 57px;
+    margin-right: 30px;
+    background-color: #ff692a;
 }
 
-header .logButtons :nth-child(1) {
+.logButtons .btnFillColor2 {
+    font-family: "Roboto Slab";
     font-size: 17px;
-    line-height: 100px;
     color: #ffffff;
     font-weight: 600;
     letter-spacing: 0.025em;
+    text-transform: uppercase;
+    width: 200px;
+    height: 57px;
+    background-color: #ff9001;
 }
 
-header .logButtons :nth-child(2) {
-    font-size: 17px;
-    line-height: 100px;
-    color: #ffffff;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-}
-
-/*Контент Главной страницы : Блок Баннер (main/banner)*/
 
 .h3whiteLight {
     font-size: 18px;
@@ -167,19 +220,23 @@ header .logButtons :nth-child(2) {
     text-align: center;
 }
 
-.card li span:nth-child(1) {
-    font-size: 70px;
+.mb90 {
+    margin-bottom: 90px;
+}
+
+.cards div div:nth-child(1) {
+    font-size: 35px;
     line-height: 40px;
     color: #ffffff;
     letter-spacing: 0.025em;
     font-weight: 600;
 }
 
-.card li span:nth-child(2) {
+.cards div div:nth-child(2) {
     /*картинка*/
 }
 
-.card li span:nth-child(3) {
+.cards div div:nth-child(3) {
     font-size: 45px;
     line-height: 40px;
     color: #ff9001;
@@ -187,7 +244,7 @@ header .logButtons :nth-child(2) {
     font-weight: 600;
 }
 
-.card li span:nth-child(4) {
+.cards div div:nth-child(4) {
     font-size: 18px;
     line-height: 30px;
     color: #ff692a;
@@ -195,12 +252,21 @@ header .logButtons :nth-child(2) {
     font-weight: 300;
 }
 
-.card li span:nth-child(5) {
+.cards div div:nth-child(5) {
     font-size: 18px;
     line-height: 30px;
     color: #ff692a;
     letter-spacing: 0.025em;
     font-weight: 600;
+}
+
+.card {
+    border: 1px solid #ffffff;
+    margin: 22px;
+}
+
+.mb330 {
+    margin-bottom: 305px;
 }
 
 /*Калькулятор Прибыли (main/calculator)*/
@@ -233,30 +299,72 @@ header .logButtons :nth-child(2) {
     text-transform: uppercase;
 }
 
-.calcResult li span:nth-child(1) {
+.calcDep .CalcDepAmount div + div {
+    font-size: 24px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.calcResult li div:nth-child(1) {
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
 }
 
-.calcResult li span:nth-child(2) {
+.calcResult li div:nth-child(2) {
     font-size: 24px;
     line-height: 30px;
     color: #05141b;
     font-weight: 600;
 }
+.calcResult {
+    margin: 0 -10px;
+}
 
-.calcResult .whiteTxtResult span:nth-child(1) {
+.calcResult li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.calcResultborder {
+    border: 1px solid #05141b;
+    width: 195px;
+    height: 95px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.calcResultColor1 {
+    width: 195px;
+    height: 95px;
+    background-color: #ff9001;
+    text-align: center;
+}
+
+.calcResultColor2 {
+    width: 195px;
+    height: 95px;
+    background-color: #ff692a;
+    text-align: center;
+}
+
+.calcResult .whiteTxtResult div:nth-child(1) {
     font-size: 17px;
     line-height: 30px;
     color: #ffffff;
 }
 
-.calcResult .whiteTxtResult span:nth-child(2) {
+.calcResult .whiteTxtResult div:nth-child(2) {
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
     font-weight: 600;
+}
+
+.calcAction {
+    text-align: center;
 }
 
 .blackTxt {
@@ -266,13 +374,16 @@ header .logButtons :nth-child(2) {
     letter-spacing: 0.025em;
 }
 
-.calcAction button {
+.btnFillColor3 {
+    font-family: "Roboto Slab";
     font-size: 17px;
-    line-height: 100px;
     color: #ffffff;
     font-weight: 600;
     letter-spacing: 0.050em;
     text-transform: uppercase;
+    width: 211px;
+    height: 56px;
+    background-color: #06141b;
 }
 
 /*Блок "О нас" (main/About)*/
@@ -280,7 +391,6 @@ header .logButtons :nth-child(2) {
 .license span {
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
     letter-spacing: 0.025em;
     font-weight: 600;
 }
@@ -290,23 +400,21 @@ header .logButtons :nth-child(2) {
     line-height: 30px;
     color: #ffffff;
     letter-spacing: 0.025em;
+    padding-bottom: 45px;
+}
+.license .aboutCard p {
+    padding-bottom: 30px;
 }
 
-.license .checkCompany span:nth-child(1) {
+.license .checkCompany span {
     font-size: 20px;
     line-height: 24px;
-    color: #444444;
+}
+.white {
+    color: #ffffff;
 }
 
-.license .checkCompany span:nth-child(3) {
-    font-size: 20px;
-    line-height: 24px;
-    color: #ff9001;
-}
-
-.license .checkCompany span:nth-child(5) {
-    font-size: 20px;
-    line-height: 24px;
+.orange {
     color: #ff9001;
 }
 
@@ -316,18 +424,39 @@ header .logButtons :nth-child(2) {
     color: #ffffff;
 }
 
-.checkCompany a {
+.checkCompany {
+    width: 260px;
+    height: 405px;
+    text-align: left;
+    background-color: #131c1f;
+    border: 1px solid #ffffff;
+    padding: 25px;
+    margin: 0px 45px 0px 45px;
+}
+
+.checkCompany div {
+    width: 260px;
+    height: 60px;
+    background-color: #ff9001;
+    text-align: center;
+}
+
+.checkCompany div a {
     font-size: 17px;
-    line-height: 100px;
     color: #ffffff;
     letter-spacing: 0.050em;
     text-decoration: none;
     text-transform: uppercase;
 }
 
+.aboutCard {
+    float: right;
+}
+
+
 /*Блок преимущества (mail/advantages)*/
 
-.leftAdv li span:nth-child(2), .rightAdv li span:nth-child(2) {
+.leftAdv div span:nth-child(2), .rightAdv div span:nth-child(2) {
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
@@ -335,13 +464,32 @@ header .logButtons :nth-child(2) {
     text-transform: uppercase;
 }
 
-.leftAdv li p, .rightAdv li p {
+.leftAdv div p, .rightAdv div p {
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
     font-weight: 300;
 }
 
+.advantages .leftAdv {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.advantages .rightAdv {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.advItem {
+    margin-bottom: 75px;
+}
+
+.mb-75 {
+    margin-bottom: 160px;
+}
 /*Призыв к регистрации (main/signUp)*/
 
 .signUp span:nth-child(2) {
@@ -361,7 +509,7 @@ header .logButtons :nth-child(2) {
     letter-spacing: 0.025em;
 }
 
-.signUp button {
+.btnFillFrame {
     font-size: 24px;
     line-height: 100px;
     color: #ffffff;
@@ -369,6 +517,8 @@ header .logButtons :nth-child(2) {
     text-transform: uppercase;
     letter-spacing: 0.025em;
 }
+
+
 
 /*Блок с активностью (main/action)*/
 
@@ -458,31 +608,46 @@ header .logButtons :nth-child(2) {
     font-weight: 600;
 }
 
-.h2grad {
+.referral .textBlock .h2grad {
     font-size: 40px;
     line-height: 30px;
-    /*ГРАДИЕНТ*/
-    color: #ffffff;
+    color: #ff7e14;
     letter-spacing: 0.025em;
-    font-weight: 600
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.referral button {
+.mb560 {
+    margin-bottom: 560px;
+}
+
+.referral .btnBorderClean {
     font-size: 24px;
-    line-height: 100px;
-    /*ГРАДИЕНТ*/
-    color: #ffffff;
+    color: #ff7e14;
     letter-spacing: 0.025em;
-    font-weight: 600
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 270px;
+    height: 70px;
+    background-color: transparent;
+    border: 3px solid #ff7e14;
 }
 
 /*Блок оплаты (main/payments)*/
+
+.payments {
+    background-color: #f7e2c9;
+}
+
+.payments div.inline {
+    margin: 95px 33px 90px 33px;
+}
 
 /*Блок с картой (main/map)*/
 
 /*Подвал (main/footer)*/
 
-.footer .copyright span {
+footer .copyright div {
     font-size: 15px;
     line-height: 24px;
     color: #ffffff;
@@ -508,7 +673,7 @@ header .logButtons :nth-child(2) {
     text-transform: uppercase;
 }
 
-.footContact span {
+.footContact div {
     font-size: 15px;
     line-height: 21px;
     color: #ff9001;
@@ -525,7 +690,7 @@ header .logButtons :nth-child(2) {
     letter-spacing: 0.025em;
 }
 
-.footContact a:nth-child(4) {
+.footContact div a[href*="tel"] {
     font-size: 15px;
     line-height: 21px;
     color: #ffffff;
@@ -533,15 +698,29 @@ header .logButtons :nth-child(2) {
     text-decoration: none;
 }
 
-.footContact a:nth-child(6) {
+.footContact div a[href*="mail"]  {
     font-size: 15px;
     line-height: 21px;
     color: #ff6b28;
     letter-spacing: 0.025em;
+    text-transform: none;
+}
+
+.footContactMb25 {
+    margin-bottom: 25px;
 }
 
 footer {
     background-color: #05141b;
+}
+
+footer .container {
+    text-align: left;
+}
+
+footer .container .colomn {
+    width: 25%;
+    margin: 100px 0px 100px 0px;
 }
 
 /*Страница =Referral=*/
