@@ -47,13 +47,39 @@ div.flex {
     text-align: center;
 }
 
+div.table {
+    display: table;
+}
+
+.tCell {
+    display: table-cell;
+}
+
+.w100 {
+    width: 100%;
+}
+
 .bgFilling {
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 /*Шапка Главной страницы (main/header)*/
 
+header .headerImg {
+    width: 1920px;
+    height: 224px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.headerImg {
+    position: relative;
+    z-index: 1;
+}
 
 .logoTxt div:nth-child(1) {
     font-family: "Podkova";
@@ -147,6 +173,20 @@ header .menu ul li {
 }
 
 /*Контент Главной страницы : Блок Баннер (main/banner)*/
+
+.banner .bannerImg {
+    width: 1920px;
+    height: 1473px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
+
+.bannerImg {
+    position: relative;
+    z-index: 1;
+}
 
 .headline div:nth-child(1) {
     font-size: 50px;
@@ -270,6 +310,20 @@ header .menu ul li {
 }
 
 /*Калькулятор Прибыли (main/calculator)*/
+
+.calculator .calcBackImg {
+    width: 1920px;
+    height: 1292px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.calcBackImg {
+    position: relative;
+    z-index: 1;
+}
 
 .h3blackLight {
     font-size: 18px;
