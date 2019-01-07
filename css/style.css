@@ -47,7 +47,7 @@ div.flex {
     text-align: center;
 }
 
-div.table {
+.table {
     display: table;
 }
 
@@ -69,7 +69,7 @@ div.table {
 
 header .headerImg {
     width: 1920px;
-    height: 224px;
+    height: 1696px;
     position: absolute;
     z-index: -1;
     left: 50%;
@@ -84,7 +84,6 @@ header .headerImg {
 .logoTxt div:nth-child(1) {
     font-family: "Podkova";
     font-size: 19.72px;
-    line-height: 19.72px;
     color: #ff9001;
     font-weight: 800;
     text-transform: uppercase;
@@ -93,7 +92,6 @@ header .headerImg {
 .logoTxt div:nth-child(2) {
     font-family: "Podkova";
     font-size: 62.1px;
-    line-height: 42.41px;
     color: #ff9001;
     font-weight: 800;
     text-transform: uppercase;
@@ -102,14 +100,14 @@ header .headerImg {
 .logoTxt div:nth-child(3) {
     font-family: "Podkova";
     font-size: 12.57px;
-    line-height: 19.72px;
     color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.0600em;
+    letter-spacing: 0.6em;
 }
 
 .logo {
+    padding-top: 30px;
     display: inline-block;
     width: 50%;
     float: left;
@@ -133,6 +131,7 @@ header .communication a[href*="mail"] {
 
 header .communication {
     width: 50%;
+    padding-top: 50px;
     float: right;
     text-align: right;
 }
@@ -169,23 +168,10 @@ header .menu span {
 header .menu ul li {
     display: inline-block;
     margin: 30px;
-
 }
 
-/*Контент Главной страницы : Блок Баннер (main/banner)*/
-
-.banner .bannerImg {
-    width: 1920px;
-    height: 1473px;
-    position: absolute;
-    left: 50%;
-    margin-left: -960px;
-    z-index: -1;
-}
-
-.bannerImg {
-    position: relative;
-    z-index: 1;
+.mb155 {
+    margin-bottom: 155px;
 }
 
 .headline div:nth-child(1) {
@@ -215,6 +201,10 @@ header .menu ul li {
     letter-spacing: 0.0350em;
 }
 
+.mb130 {
+    margin-bottom: 130px;
+}
+
 .logButtons .btnFillColor1 {
     font-family: "Roboto Slab";
     font-size: 17px;
@@ -238,6 +228,10 @@ header .menu ul li {
     width: 200px;
     height: 57px;
     background-color: #ff9001;
+}
+
+.mb245 {
+    margin-bottom: 245px;
 }
 
 
@@ -325,6 +319,18 @@ header .menu ul li {
     z-index: 1;
 }
 
+.calculator .calcImgSemiLight {
+    width: 1231px;
+    height: 703px;
+    position: absolute;
+    z-index: -1;
+}
+
+.calcImgSemiLight {
+    position: relative;
+    z-index: 1;
+}
+
 .h3blackLight {
     font-size: 18px;
     line-height: 70px;
@@ -342,6 +348,10 @@ header .menu ul li {
     font-weight: 600;
     letter-spacing: 0.025em;
     text-align: center;
+}
+
+.mb195 {
+    margin-bottom: 195px;
 }
 
 .calculator label {
@@ -375,31 +385,27 @@ header .menu ul li {
 }
 .calcResult {
     margin: 0 -10px;
+    display: flex;
 }
 
 .calcResult li {
-    display: inline-block;
+    width: 20%;
     margin: 10px;
+    padding: 15px;
 }
 
 .calcResultborder {
     border: 1px solid #05141b;
-    width: 195px;
-    height: 95px;
     background-color: transparent;
     text-align: center;
 }
 
 .calcResultColor1 {
-    width: 195px;
-    height: 95px;
     background-color: #ff9001;
     text-align: center;
 }
 
 .calcResultColor2 {
-    width: 195px;
-    height: 95px;
     background-color: #ff692a;
     text-align: center;
 }
@@ -415,6 +421,14 @@ header .menu ul li {
     line-height: 30px;
     color: #ffffff;
     font-weight: 600;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
 }
 
 .calcAction {
@@ -440,7 +454,42 @@ header .menu ul li {
     background-color: #06141b;
 }
 
+.mb410 {
+    margin-bottom: 410px;
+}
+
 /*Блок "О нас" (main/About)*/
+
+.about .aboutBackImg {
+    width: 1920px;
+    height: 1876px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.aboutBackImg {
+    position: relative;
+    z-index: 1;
+}
+
+.about .videoPresBackImg {
+    width: 1235px;
+    height: 707px;
+    position: absolute;
+    z-index: -1;
+    margin-bottom: 100px;
+}
+
+.videoPresBackImg {
+    position: relative;
+    z-index: 1;
+}
+
+.mb120 {
+    margin-bottom: 120px;
+}
 
 .license span {
     font-size: 20px;
@@ -478,6 +527,14 @@ header .menu ul li {
     color: #ffffff;
 }
 
+.mb300 {
+    margin-bottom: 300px;
+}
+
+.mb70 {
+    margin-bottom: 70px;
+}
+
 .checkCompany {
     width: 260px;
     height: 405px;
@@ -507,8 +564,30 @@ header .menu ul li {
     float: right;
 }
 
+.mb520 {
+    margin-bottom: 520px;
+}
+
+.videoPresentation {
+    text-align: center;
+}
 
 /*Блок преимущества (mail/advantages)*/
+
+.advantages .advBackImg {
+    width: 1920px;
+    height: 1155px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.advBackImg  {
+    position: relative;
+    z-index: 1;
+}
+
 
 .leftAdv div span:nth-child(2), .rightAdv div span:nth-child(2) {
     font-size: 17px;
@@ -541,40 +620,72 @@ header .menu ul li {
     margin-bottom: 75px;
 }
 
-.mb-75 {
+.mb160 {
     margin-bottom: 160px;
 }
 /*Призыв к регистрации (main/signUp)*/
 
-.signUp span:nth-child(2) {
+.signUp {
+    background-color: #ff8111;
+    height: 200px;
+}
+
+.signUpTxt span:first-child {
     font-size: 50px;
     line-height: 60px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
+    display: block;
 }
 
-.signUp span:nth-child(3) {
+.signUpTxt span:last-child {
     font-size: 30px;
     line-height: 50px;
     color: #06151c;
     font-weight: 300;
     letter-spacing: 0.025em;
+    display: block;
 }
 
-.btnFillFrame {
+.btnFillFrame button {
+    font-family: "Podkova";
     font-size: 24px;
-    line-height: 100px;
+    width: 270px;
+    height: 70px;
     color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.025em;
+    border: 5px solid #ffffff;
+    background-color: inherit;
+    float: right;
+    margin: 60px;
 }
 
+.signUpLeft{
+    float: left;
+    margin: 40px;
+}
 
-
+.mb220 {
+    margin-bottom: 220px;
+}
 /*Блок с активностью (main/action)*/
+
+.action .actionBackImg {
+    width: 1920px;
+    height: 1291px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.actionBackImg  {
+    position: relative;
+    z-index: 1;
+}
 
 .iconCaps {
     font-size: 25px;
@@ -585,7 +696,7 @@ header .menu ul li {
     font-weight: 600;
 }
 
-.action .lastDeposits span:nth-child(1) {
+.action .lastDeposits div span:nth-child(1) {
     font-size: 15px;
     line-height: 40px;
     color: #ffffff;
@@ -593,7 +704,7 @@ header .menu ul li {
     font-weight: 300;
 }
 
-.action .lastDeposits span:nth-child(2) {
+.action .lastDeposits div span:nth-child(2) {
     font-size: 15px;
     line-height: 40px;
     color: #ff692a;
@@ -601,30 +712,46 @@ header .menu ul li {
     font-weight: 600;
 }
 
-.wheel span:nth-child(1) {
+.lastDep {
+    float: left;
+}
+.lastDeposits {
+    display: table;
+    width: 305px;
+    border: 1px solid #ffffff;
+    vertical-align: middle;
+}
+
+.depItem {
+    display: table-cell;
+    table-layout: fixed;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.wheelItem span:nth-child(1) {
     font-size: 25px;
     line-height: 32.42px;
     color: #ffffff;
     letter-spacing: 0.025em;
     font-weight: 600;
+    display: block;
 }
 
-.wheel span:nth-child(2) {
+.wheelItem span:nth-child(2) {
     font-size: 15px;
     line-height: 24.32px;
     color: #ffffff;
     letter-spacing: 0.025em;
+    display: block;
 }
 
-.wheel:nth-child(1) {
+.wheelImg {
     width: 470px;
     height: 470px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.action .lastWithdrawals span:nth-child(1) {
+.action .lastWithdrawals li span:nth-child(1) {
     font-size: 15px;
     line-height: 40px;
     color: #ffffff;
@@ -632,7 +759,7 @@ header .menu ul li {
     font-weight: 300;
 }
 
-.action .lastWithdrawals span:nth-child(2) {
+.action .lastWithdrawals li span:nth-child(2) {
     font-size: 15px;
     line-height: 40px;
     color: #ff692a;
@@ -640,7 +767,17 @@ header .menu ul li {
     font-weight: 600;
 }
 
-.action .info span {
+.lastWith {
+    float: right;
+}
+.lastWithdrawals {
+    display: table;
+}
+
+.lastWithdrawals li {
+    display: table-row;
+}
+.action .info{
     font-size: 15px;
     line-height: 24px;
     color: #ffffff;
@@ -648,11 +785,43 @@ header .menu ul li {
     font-weight: 300;
 }
 
+.action .info {
+}
+
+.graph .chart li {
+    display: inline-block;
+    background-color: #ffa42f;
+    width: 35px;
+    height: 23px;
+    text-align: center;
+}
+
+.chart li a {
+    text-decoration: none;
+}
+
 .action .graph {
     /*ГРАФИК*/
 }
 
+.mb280 {
+    margin-bottom: 280px;
+}
 /*Реферальный бонус (main/referral)*/
+
+.referral .refBackImg {
+    width: 1920px;
+    height: 1320px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.refBackImg  {
+    position: relative;
+    z-index: 1;
+}
 
 .textBlock p:nth-child(1) {
     font-size: 20px;
@@ -662,7 +831,15 @@ header .menu ul li {
     font-weight: 600;
 }
 
-.referral .textBlock .h2grad {
+.mb45 {
+    margin-bottom: 45px;
+}
+
+.mb560 {
+    margin-bottom: 560px;
+}
+
+.h2Grad {
     font-size: 40px;
     line-height: 30px;
     color: #ff7e14;
@@ -671,11 +848,11 @@ header .menu ul li {
     text-transform: uppercase;
 }
 
-.mb560 {
-    margin-bottom: 560px;
+.mb60 {
+    margin-bottom: 60px;
 }
 
-.referral .btnBorderClean {
+.btnBorderClean button {
     font-size: 24px;
     color: #ff7e14;
     letter-spacing: 0.025em;
@@ -686,6 +863,7 @@ header .menu ul li {
     background-color: transparent;
     border: 3px solid #ff7e14;
 }
+
 
 /*Блок оплаты (main/payments)*/
 

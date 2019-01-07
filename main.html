@@ -11,67 +11,63 @@
 <!--Шапка страницы-->
 <header>
     <div class="headerImg bgFilling" style="background-image: url(img/jpeg/header.jpg)"></div>
-        <div class="container">
-            <div class="flex">
-                <div class="logo">
-                    <div class="inline">
-                        <img src="img/png/logoGrad.png" alt="logo">
-                    </div>
-                    <div class="logoTxt inline">
-                        <div>atlantic</div>
-                        <div>Oil</div>
-                        <div>limited</div>
-                    </div>
+    <div class="container">
+        <div class="flex">
+            <div class="logo">
+                <div class="inline">
+                    <img src="img/png/logoGrad.png" alt="logo">
                 </div>
-                <div class="communication">
-                    <div class="inline">
-                        <a href="#" class="icon-soc">
-                            <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                <div class="logoTxt inline">
+                    <div>atlantic</div>
+                    <div>Oil</div>
+                    <div>limited</div>
+                </div>
+            </div>
+            <div class="communication">
+                <div class="inline">
+                    <a href="#" class="icon-soc">
+                        <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                    </a>
+                </div>
+                <div class="tel inline">
+                    <div>
+                        <a href="tel:+44 7911 123-456">
+                            <span class="small">+44 7911</span>
+                            <span> 123-456</span>
                         </a>
                     </div>
-                    <div class="tel inline">
-                        <div>
-                            <a href="tel:+44 7911 123-456">
-                                <span class="small">+44 7911</span>
-                                <span> 123-456</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="mailto:atlanticoil@support.cc">atlanticoil@support.cc</a>
-                        </div>
-                    </div>
-                    <div class="inline">
-                        <a href="#" class="icon-phone"><span class="path1"></span><span class="path2"></span><span
-                                class="path3"></span><span class="path4"></span></a>
+                    <div>
+                        <a href="mailto:atlanticoil@support.cc">atlanticoil@support.cc</a>
                     </div>
                 </div>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><span>home</span></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">referal program</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">faq</a></li>
-                    <li><a href="#">terms</a></li>
-                    <li><a href="#">rate us</a></li>
-                    <li><a href="#">support</a></li>
-                </ul>
+                <div class="inline">
+                    <a href="#" class="icon-phone"><span class="path1"></span><span class="path2"></span><span
+                            class="path3"></span><span class="path4"></span></a>
+                </div>
             </div>
         </div>
-</header>
-<!--Контент главной страницы-->
-<div class="content">
+        <div class="menu mb155">
+            <ul>
+                <li><span>home</span></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">referal program</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">faq</a></li>
+                <li><a href="#">terms</a></li>
+                <li><a href="#">rate us</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
+        </div>
+    </div>
     <!--Блок баннер-->
     <div class="banner">
-        <div class="bannerImg bgFilling" style="background-image: url(img/jpeg/banner.jpg)"></div>
         <div class="container">
-            <div class="headline">
+            <div class="headline mb130">
                 <div>Make right</div>
                 <div>investment</div>
                 <div>Make investment with <b>Atlantic Oil LTD</b></div>
             </div>
-            <div class="logButtons">
+            <div class="logButtons mb245">
                 <button class="btnFillColor1">login</button>
                 <button class="btnFillColor2">sign up</button>
             </div>
@@ -113,80 +109,84 @@
             </div>
         </div>
     </div>
-    <!--Калькулятор прибыли-->
+</header>
+<!--Контент главной страницы-->
+<!--Калькулятор прибыли-->
+<div class="content">
     <div class="calculator">
-        <div class="calcBackImg bgFilling"  style="background-image: url(img/jpeg/calculator.jpg)"></div>
+        <div class="calcBackImg bgFilling" style="background-image: url(img/jpeg/calculator.jpg)"></div>
         <div class="container">
             <h3 class="h3blackLight">your profit</h3>
-            <h2 class="h2blackBold">Calculator</h2>
-            <div class="calcImgSemiLight" style="background-image: url(img/png/calculator_semi_light.png)">
-                <div class="calcDep">
-                    <div class="inline">
-                        <label for="plan">SELECT PLAN:</label>
-                        <div>
-                            <select name="plan" id="plan">
-                                <!--Тут заселектим планы для выбора-->
-                                <option value="Plan 4 $ 2501 - $ 5000 180% After 5 Days" selected>Plan 4 $ 2501 - $ 5000
-                                    180%
-                                    After 5 Days
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="inline">
-                        <label for="enter">ENTER AMOUNT:</label>
-                        <div>
-                            <input type="text" id="enter" name="enter">
-                        </div>
-                    </div>
-                    <div class="CalcDepAmount inline">
-                        <div>Deposit amount:</div>
-                        <div>3001 $</div>
-                    </div>
-                </div>
-                <div class="calcAmount">
-                    <label for="polzun">SELECT AMOUNT:</label>
-                    <!--Ползун-->
+            <h2 class="h2blackBold mb195">Calculator</h2>
+            <div class="calcImgSemiLight bgFilling"
+                 style="background-image: url(img/png/calculator_semi_light.png)"></div>
+            <div class="calcDep">
+                <div class="inline">
+                    <label for="plan">SELECT PLAN:</label>
                     <div>
-                        <input type="text" id="polzun" name="polzun">
+                        <select name="plan" id="plan">
+                            <!--Тут заселектим планы для выбора-->
+                            <option value="Plan 4 $ 2501 - $ 5000 180% After 5 Days" selected>Plan 4 $ 2501 - $ 5000
+                                180%
+                                After 5 Days
+                            </option>
+                        </select>
                     </div>
                 </div>
-                <ul class="calcResult clear">
-                    <li class="calcResultborder">
-                        <div>Selected plan:</div>
-                        <div>Plan 4</div>
-                    </li>
-                    <li class="calcResultborder">
-                        <div>Deposit period:</div>
-                        <div>5 Days</div>
-                    </li>
-                    <li class="calcResultborder">
-                        <div>Deposit percent:</div>
-                        <div>180%</div>
-                    </li>
-                    <li class="whiteTxtResult calcResultColor1">
-                        <div>Dayly profit:</div>
-                        <div>715.98 $</div>
-                    </li>
-                    <li class="whiteTxtResult calcResultColor2">
-                        <div>Total profit:</div>
-                        <div>47335.60 $</div>
-                    </li>
-                </ul>
-                <div class="calcAction">
-                    <div class="blackTxt">Get moneyAll payments are made after the end of the deposit period.</div>
-                    <div class="blackTxt">The deposit is included in the payments.</div>
-                    <button class="btnFillColor3">get money</button>
+                <div class="inline">
+                    <label for="enter">ENTER AMOUNT:</label>
+                    <div>
+                        <input type="text" id="enter" name="enter">
+                    </div>
                 </div>
+                <div class="CalcDepAmount inline">
+                    <div>Deposit amount:</div>
+                    <div>3001 $</div>
+                </div>
+            </div>
+            <div class="calcAmount">
+                <label for="polzun">SELECT AMOUNT:</label>
+                <!--Ползун-->
+                <div>
+                    <input type="text" id="polzun" name="polzun">
+                </div>
+            </div>
+            <ul class="calcResult">
+                <li class="calcResultborder">
+                    <div>Selected plan:</div>
+                    <div>Plan 4</div>
+                </li>
+                <li class="calcResultborder">
+                    <div>Deposit period:</div>
+                    <div>5 Days</div>
+                </li>
+                <li class="calcResultborder">
+                    <div>Deposit percent:</div>
+                    <div>180%</div>
+                </li>
+                <li class="whiteTxtResult calcResultColor1">
+                    <div>Dayly profit:</div>
+                    <div>715.98 $</div>
+                </li>
+                <li class="whiteTxtResult calcResultColor2">
+                    <div>Total profit:</div>
+                    <div>47335.60 $</div>
+                </li>
+            </ul>
+            <div class="calcAction">
+                <div class="blackTxt mt50">Get moneyAll payments are made after the end of the deposit period.</div>
+                <div class="blackTxt mb50">The deposit is included in the payments.</div>
+                <button class="btnFillColor3 mb410">get money</button>
             </div>
         </div>
     </div>
     <!--Блок "О нас"-->
-    <div class="about bgFilling" style="background-image: url(img/jpeg/about.jpg)">
+    <div class="about">
+        <div class="aboutBackImg bgFilling" style="background-image: url(img/jpeg/about.jpg)"></div>
         <div class="container">
             <h3 class="h3whiteLight">atlantic oil limited</h3>
-            <h2 class="h2whiteBold">About company</h2>
-            <div class="license">
+            <h2 class="h2whiteBold mb120">About company</h2>
+            <div class="license mb300">
                 <div class="aboutCard flex">
                     <div class="checkCompany inline">
                         <span class="white">Atlantic Oil Limited</span>
@@ -220,19 +220,21 @@
                     consectetur fringilla ligula eu pellentesque. Sed imperdiet est ac erat sollicitudin, condimentum
                     cursus risus porttitor. </p>
             </div>
-            <div class="videoPresentation" style="background-image: url(img/png/videoImg.png)">
-                <span class="icon-playVideo"><span class="path1"></span><span class="path2"></span></span>
+            <div class="videoPresentation mb520">
+                <div class="videoPresBackImg" style="background-image: url(img/png/videoImg.png)"></div>
+                <span class="icon-playVideo mb70"><span class="path1"></span><span class="path2"></span></span>
                 <h3 class="h3whiteLight">atlantic oil limited</h3>
-                <h2 class="h2whiteBold">Watch video</h2>
+                <h2 class="h2whiteBold ">Watch video</h2>
             </div>
         </div>
     </div>
     <!--Преимущества-->
-    <div class="advantages bgFilling clear" style="background-image: url(img/jpeg/advantages.jpg)">
+    <div class="advantages clear">
+        <div class="advBackImg bgFilling" style="background-image: url(img/jpeg/advantages.jpg)"></div>
         <div class="container">
             <h3 class="h3blackLight">our advantages</h3>
-            <h2 class="h2blackBold mb-75">Why choose us?</h2>
-            <div class="leftAdv clear">
+            <h2 class="h2blackBold mb160">Why choose us?</h2>
+            <div class="leftAdv mb245 clear">
                 <div class="advItem">
                     <span class="icon-adv1"><span class="path1"></span><span class="path2"></span></span>
                     <span>FAVORABLE INVESTMENTS</span>
@@ -242,14 +244,16 @@
           <span class="icon-adv2"><span class="path1"></span><span class="path2"></span><span
                   class="path3"></span></span>
                     <span>USER-FRIENDLY INTERFACE</span>
-                    <p>The personal area is simple and<br> clear, all information and buttons <br>are placed on the main
+                    <p>The personal area is simple and<br> clear, all information and buttons <br>are placed on the
+                        main
                         page.</p>
                 </div>
                 <div class="advItem">
           <span class="icon-adv3"><span class="path1"></span><span class="path2"></span><span
                   class="path3"></span></span>
                     <span>REFERRAL PROGRAM</span>
-                    <p>We do increase profit<br> and minimize expenses, and investors<br> get a favorable percentage.
+                    <p>We do increase profit<br> and minimize expenses, and investors<br> get a favorable
+                        percentage.
                     </p>
                 </div>
             </div>
@@ -277,88 +281,75 @@
         </div>
     </div>
     <!--Призыв к регистрации-->
-    <div class="signUp bgFilling" style="background-image: url(img/jpeg/signUp.jpg)">
+    <div class="signUp">
         <div class="container">
-            <div>
-                <img src="img/png/logo.png" alt="">
-                <span>atlantic oil limited</span>
-                <span>Start earning with us right now</span>
+            <div class="signUpLeft clear">
+                <div class="signUpLogo inline clear">
+                    <img src="img/png/logo.png" alt="Logo">
+                </div>
+                <div class="signUpTxt inline clear">
+                    <span>atlantic oil limited</span>
+                    <span>Start earning with us right now</span>
+                </div>
             </div>
-            <div>
-                <button class="btnFillFrame">sign up now</button>
+            <div class="btnFillFrame clear mb220">
+                <button>sign up now</button>
             </div>
         </div>
     </div>
     <!--Блок с активностью-->
-    <div class="action bgFilling" style="background-image: url(img/jpeg/action.jpg)">
+    <div class="action">
+        <div class="actionBackImg bgFilling" style="background-image: url(img/jpeg/action.jpg)"></div>
         <div class="container">
             <div class="lastDep">
                 <span class="icon-lastDep"><span class="path1"></span><span class="path2"></span></span>
                 <span class="iconCaps">LAST DEPOSITS</span>
-                <ul class="lastDeposits">
-                    <li>
-                        <span>ewisjohn</span>
-                        <span>$ 1700.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>maputrinh</span>
-                        <span>$ 257.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>sugus</span>
-                        <span>$ 2835.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>nguyendung</span>
-                        <span>$ 750.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>ymys</span>
-                        <span>$ 1700.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>ivanapre</span>
-                        <span>$ 3100.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>skybitcoins</span>
-                        <span>$ 5670.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>van507</span>
-                        <span>$ 257.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>shamshaan</span>
-                        <span>$ 2835.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>nguyendung</span>
-                        <span>$ 750.00</span>
-                        <span></span>
-                    </li>
-                </ul>
+                <div class="lastDeposits">
+                    <div>
+                        <div class="depItem">
+                            <span>ewisjohn</span><span>$ 1700.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>maputrinh</span><span>$ 257.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>sugus</span><span>$ 2835.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>nguyendung</span><span>$ 750.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>ymys</span><span>$ 1700.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>ivanapre</span><span>$ 3100.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>skybitcoins</span><span>$ 5670.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>van507</span><span>$ 257.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>shamshaan</span><span>$ 2835.00</span><span>#</span>
+                        </div>
+                        <div class="depItem">
+                            <span>nguyendung</span><span>$ 750.00</span><span>#</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="wheel">
-                <div style="background-image: url(img/png/wheel.png)"></div>
-                <div class="gray">
+                <div class="wheelImg bgFilling" style="background-image: url(img/png/wheel.png)"></div>
+                <div class="wheelItem gray">
                     <span>374057$</span>
                     <span>Profit Total</span>
                 </div>
-                <div class="orange">
+                <div class="wheelItem orange">
                     <span>458358$</span>
                     <span>Deposits Total</span>
                 </div>
-                <div class="yellow">
+                <div class="wheelItem yellow">
                     <span>25748</span>
                     <span>Number of Investors</span>
                 </div>
@@ -366,76 +357,78 @@
             <div class="lastWith">
                 <span class="icon-lastWidth"><span class="path1"></span><span class="path2"></span></span>
                 <span class="iconCaps">LAST WITHDRAWALS</span>
-                <ul class="lastWithdrawals">
-                    <li>
-                        <span>ewisjohn</span>
-                        <span>$ 1700.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>maputrinh</span>
-                        <span>$ 257.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>sugus</span>
-                        <span>$ 2835.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>nguyendung</span>
-                        <span>$ 750.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>ymys</span>
-                        <span>$ 1700.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>ivanapre</span>
-                        <span>$ 3100.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>skybitcoins</span>
-                        <span>$ 5670.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>van507</span>
-                        <span>$ 257.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>shamshaan</span>
-                        <span>$ 2835.00</span>
-                        <span></span>
-                    </li>
-                    <li>
-                        <span>nguyendung</span>
-                        <span>$ 750.00</span>
-                        <span></span>
-                    </li>
-                </ul>
+                <div class="lastWithdrawals">
+                    <div>
+                        <div>
+                            <span>ewisjohn</span>
+                            <span>$ 1700.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>maputrinh</span>
+                            <span>$ 257.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>sugus</span>
+                            <span>$ 2835.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>nguyendung</span>
+                            <span>$ 750.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>ymys</span>
+                            <span>$ 1700.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>ivanapre</span>
+                            <span>$ 3100.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>skybitcoins</span>
+                            <span>$ 5670.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>van507</span>
+                            <span>$ 257.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>shamshaan</span>
+                            <span>$ 2835.00</span>
+                            <span>#</span>
+                        </div>
+                        <div>
+                            <span>nguyendung</span>
+                            <span>$ 750.00</span>
+                            <span>#</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="info">
+            <div class="info clear">
                 <span>Our project is a most interesting startup which is directed to work with the cryptocurrency exchange market.</span>
                 <span>We believe that was the future. About popularity and benefit of cooperation with our cryptocurrency project it is possible to know by the chart of income which promptly grows.</span>
                 <span>Investment tier is actively increases, and it indicates about interest of investors and about successes of our activity.</span>
             </div>
-            <div class="chart">
-                <ul>
-                    <li><a href="#">1h</a></li>
-                    <li><a href="#">12h</a></li>
-                    <li><a href="#">1d</a></li>
-                    <li><a href="#">1w</a></li>
-                    <li><a href="#">1m</a></li>
-                    <li><a href="#">3m</a></li>
-                    <li><a href="#">1y</a></li>
-                    <li><a href="#">all</a></li>
-                </ul>
-                <div class="graph">
+            <div class="graph mb280 clear">
+                <div class="chart">
+                    <ul>
+                        <li><a href="#">1h</a></li>
+                        <li><a href="#">12h</a></li>
+                        <li><a href="#">1d</a></li>
+                        <li><a href="#">1w</a></li>
+                        <li><a href="#">1m</a></li>
+                        <li><a href="#">3m</a></li>
+                        <li><a href="#">1y</a></li>
+                        <li><a href="#">all</a></li>
+                    </ul>
                     <!--Тут будет вставлен график-->
                 </div>
             </div>
@@ -443,20 +436,26 @@
     </div>
 </div>
 <!--Реферальный бонус-->
-<div class="referral bgFilling" style="background-image: url(img/jpeg/referral.jpg)">
+<div class="referral">
+    <div class="refBackImg" style="background-image: url(img/jpeg/referral.jpg)"></div>
     <div class="container">
         <h3 class="h3blackLight">atlantic oil limited</h3>
-        <h2 class="h2blackBold">Referal program</h2>
+        <h2 class="h2blackBold mb70">Referal program</h2>
         <div class="textBlock">
-            <p class="taCenter">The ordinary referrals, which become a part of our team get a profit of 3% of each new deposit. </p>
-            <p class="blackTxt taCenter mb560">Your basic investment will grow every minute and to bring you an additional income as
+            <p class="taCenter mb45">The ordinary referrals, which become a part of our team get a profit of 3% of each
+                new
+                deposit. </p>
+            <p class="blackTxt taCenter mb560">Your basic investment will grow every minute and to bring you an
+                additional income as
                 the market of
                 cryptocurrency is hyperactive today. Becoming our partner, you take a step on the way of economic
                 development.</p>
         </div>
         <img src="" alt="">
-        <h2 class="h2Grad taCenter">Start earning with us:</h2>
-        <button class="btnBorderClean taCenter">sign up now</button>
+        <h2 class="h2Grad taCenter mb60">Start earning with us:</h2>
+        <div class="btnBorderClean taCenter mb130">
+            <button>sign up now</button>
+        </div>
     </div>
 </div>
 <!--Блок оплаты-->
