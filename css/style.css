@@ -43,6 +43,10 @@ div.flex {
     display: flex;
 }
 
+.block {
+    display: block;
+}
+
 .taCenter {
     text-align: center;
 }
@@ -106,7 +110,7 @@ header .headerImg {
     letter-spacing: 0.6em;
 }
 
-.logo {
+.logoFloat {
     padding-top: 30px;
     display: inline-block;
     width: 50%;
@@ -129,7 +133,7 @@ header .communication a[href*="mail"] {
     letter-spacing: 0.050em;
 }
 
-header .communication {
+header .communicationFloat {
     width: 50%;
     padding-top: 50px;
     float: right;
@@ -383,6 +387,7 @@ header .menu ul li {
     color: #05141b;
     font-weight: 600;
 }
+
 .calcResult {
     margin: 0 -10px;
     display: flex;
@@ -505,6 +510,7 @@ header .menu ul li {
     letter-spacing: 0.025em;
     padding-bottom: 45px;
 }
+
 .license .aboutCard p {
     padding-bottom: 30px;
 }
@@ -513,6 +519,7 @@ header .menu ul li {
     font-size: 20px;
     line-height: 24px;
 }
+
 .white {
     color: #ffffff;
 }
@@ -583,7 +590,7 @@ header .menu ul li {
     margin-left: -960px;
 }
 
-.advBackImg  {
+.advBackImg {
     position: relative;
     z-index: 1;
 }
@@ -623,6 +630,7 @@ header .menu ul li {
 .mb160 {
     margin-bottom: 160px;
 }
+
 /*Призыв к регистрации (main/signUp)*/
 
 .signUp {
@@ -663,7 +671,7 @@ header .menu ul li {
     margin: 60px;
 }
 
-.signUpLeft{
+.signUpLeft {
     float: left;
     margin: 40px;
 }
@@ -671,6 +679,7 @@ header .menu ul li {
 .mb220 {
     margin-bottom: 220px;
 }
+
 /*Блок с активностью (main/action)*/
 
 .action .actionBackImg {
@@ -682,7 +691,7 @@ header .menu ul li {
     margin-left: -960px;
 }
 
-.actionBackImg  {
+.actionBackImg {
     position: relative;
     z-index: 1;
 }
@@ -715,6 +724,7 @@ header .menu ul li {
 .lastDep {
     float: left;
 }
+
 .lastDeposits {
     display: table;
     width: 305px;
@@ -770,6 +780,7 @@ header .menu ul li {
 .lastWith {
     float: right;
 }
+
 .lastWithdrawals {
     display: table;
 }
@@ -777,15 +788,13 @@ header .menu ul li {
 .lastWithdrawals li {
     display: table-row;
 }
-.action .info{
+
+.action .info {
     font-size: 15px;
     line-height: 24px;
     color: #ffffff;
     letter-spacing: 0.025em;
     font-weight: 300;
-}
-
-.action .info {
 }
 
 .graph .chart li {
@@ -807,6 +816,7 @@ header .menu ul li {
 .mb280 {
     margin-bottom: 280px;
 }
+
 /*Реферальный бонус (main/referral)*/
 
 .referral .refBackImg {
@@ -818,7 +828,7 @@ header .menu ul li {
     margin-left: -960px;
 }
 
-.refBackImg  {
+.refBackImg {
     position: relative;
     z-index: 1;
 }
@@ -930,7 +940,7 @@ footer .copyright div {
     text-decoration: none;
 }
 
-.footContact div a[href*="mail"]  {
+.footContact div a[href*="mail"] {
     font-size: 15px;
     line-height: 21px;
     color: #ff6b28;
@@ -959,21 +969,58 @@ footer .container .colomn {
 
 /*Шапка Реферала (referral/header)*/
 
-.exit span:nth-child(1) {
+header .RefHeadBackImg {
+    width: 1920px;
+    height: 522px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.RefHeadBackImg {
+    position: relative;
+    z-index: 1;
+}
+
+/*.floatLine2 div {*/
+/*float: left;*/
+/*width: 33.3333%;*/
+/*}*/
+
+.exit div:nth-child(1) {
     font-size: 17px;
     line-height: 30px;
     color: #ffffff;
     letter-spacing: 0.025em;
 }
 
-.exit span:nth-child(2) {
+.exit div:nth-child(2) {
     font-size: 17px;
     line-height: 30px;
     color: #ff9001;
     letter-spacing: 0.025em;
 }
 
-/*Контент страницы Referral (refferal/Content)*/
+.floatLine3 > div {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+}
+
+/*.user {*/
+/*width: 260px;*/
+/*height: 110px;*/
+/*background-color: #000000;*/
+/*text-align: justify;*/
+/*}*/
+
+/*.lastSeen {*/
+/*width: 260px;*/
+/*height: 110px;*/
+/*background-color: #000000;*/
+/*text-align: justify;*/
+/*}*/
 
 .userPhoto {
     width: 70px;
@@ -983,14 +1030,14 @@ footer .container .colomn {
     background-position: center;
 }
 
-.content .user span:nth-child(odd) {
+.user span:nth-child(odd) {
     font-size: 15px;
     line-height: 20px;
     color: #ffffff;
     letter-spacing: 0.025em;
 }
 
-.content .user span:nth-child(even) {
+.user span:nth-child(even) {
     font-size: 15px;
     line-height: 20px;
     color: #ff9001;
@@ -998,7 +1045,7 @@ footer .container .colomn {
     font-weight: 600;
 }
 
-.content .user a {
+.user a {
     font-size: 15px;
     line-height: 30px;
     color: #ff692a;
@@ -1022,15 +1069,23 @@ footer .container .colomn {
     font-weight: 600;
 }
 
-.depWidth button {
+.lastSeen span {
+    display: block;
+}
+
+.depWidthButton {
+    font-family: Podkova;
     font-size: 24px;
-    line-height: 100px;
     color: #05141b;
     letter-spacing: 0.025em;
     text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    width: 260px;
+    height: 110px;
 }
 
-.balance > div:nth-child(2) span:nth-child(1) {
+.yrBalance1 {
     font-size: 20px;
     line-height: 53px;
     color: #ffffff;
@@ -1039,7 +1094,7 @@ footer .container .colomn {
     font-weight: 600;
 }
 
-.balance > div:nth-child(2) span:nth-child(2) {
+.yrBalance2 {
     font-size: 30px;
     line-height: 40px;
     color: #ff9001;
@@ -1049,7 +1104,7 @@ footer .container .colomn {
 
 /*Иконка валюты*/
 
-.balance ul span:nth-child(2) {
+.balance .refBalTxt {
     font-size: 20px;
     line-height: 53px;
     color: #ff9001;
@@ -1058,7 +1113,10 @@ footer .container .colomn {
     letter-spacing: 0.025em;
 }
 
-/*Меню внутри контента*/
+.balance > div {
+    float: left;
+    width: 25%;
+}
 
 .contentMenu a {
     font-size: 15px;
@@ -1078,6 +1136,33 @@ footer .container .colomn {
     letter-spacing: 0.010em;
     font-weight: 600;
     text-decoration: none;
+    background-color: #ff692a;
+}
+
+.contentMenu {
+    border: 2px solid #ff692a;
+}
+
+.contentMenu li {
+    display: inline-block;
+    margin: 10px;
+}
+
+
+/*Контент страницы Referral (refferal/Content)*/
+
+.content .RefContBackImg {
+    width: 1920px;
+    height: 2209px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.RefContBackImg {
+    position: relative;
+    z-index: 1;
 }
 
 .h1RefWhite {
@@ -1118,6 +1203,12 @@ footer .container .colomn {
     font-weight: 600;
 }
 
+.yrStat > div {
+    float: left;
+    width: 50%;
+    padding: 23px;
+}
+
 .stat li span:nth-child(1) {
     font-size: 15px;
     line-height: 80px;
@@ -1125,7 +1216,7 @@ footer .container .colomn {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
-    /*text-align: left;*/
+    text-align: left;
 }
 
 .stat li span:nth-child(2) {
@@ -1135,7 +1226,7 @@ footer .container .colomn {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
-    /*text-align: right;*/
+    text-align: right;
 }
 
 .refIns label {
@@ -1146,7 +1237,12 @@ footer .container .colomn {
     font-weight: 600;
 }
 
-.content .refDate .RefTableSpan {
+.refIns > div {
+    float: left;
+    width: 50%;
+}
+
+.refDate .RefTableSpan {
     font-size: 15px;
     line-height: 50px;
     color: #05141b;
@@ -1155,7 +1251,7 @@ footer .container .colomn {
     letter-spacing: 0.025em;
 }
 
-.refDate li span:nth-child(1) {
+.refDate .refDate1 {
     font-size: 15px;
     line-height: 50px;
     color: #ffffff;
@@ -1163,7 +1259,7 @@ footer .container .colomn {
     letter-spacing: 0.025em;
 }
 
-.refDate li span:nth-child(2) {
+.refDate .refDate2 {
     font-size: 17px;
     line-height: 50px;
     color: #ff9001;
@@ -1171,12 +1267,21 @@ footer .container .colomn {
     letter-spacing: 0.025em;
 }
 
-.refDate li span:nth-child(3) {
+.refDate .refDate3 {
     font-size: 17px;
     line-height: 50px;
     color: #ff692a;
     font-weight: 600;
     letter-spacing: 0.025em;
+}
+
+.refDate ul {
+    display: table;
+    width: 100%;
+}
+
+.refDate ul li {
+    display: table-cell;
 }
 
 /*Таблица с рефералами клиента*/
@@ -1212,9 +1317,10 @@ footer .container .colomn {
     letter-spacing: 0.025em;
 }
 
+
 /*Кнопки навигации*/
 
-.navigate li a {
+.navigate div a {
     font-size: 17px;
     line-height: 30px;
     color: #ffffff;
@@ -1222,11 +1328,22 @@ footer .container .colomn {
     text-decoration: none;
 }
 
-.navigate li span {
+.navigate div span {
     font-size: 17px;
     line-height: 30px;
     color: #000000;
     letter-spacing: 0.025em;
+}
+
+.navigate div {
+    display: inline;
+}
+
+.naviBorder {
+    background-color: #ff6b28;
+    margin: 3px;
+    border: 1px solid #ffffff;
+    padding: 10px 15px 10px 15px;
 }
 
 /*footer страницы Referral*/
