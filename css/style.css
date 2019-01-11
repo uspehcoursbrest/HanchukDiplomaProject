@@ -59,6 +59,10 @@ div.flex {
     display: table-cell;
 }
 
+.tRow {
+    display: table-row;
+}
+
 .w100 {
     width: 100%;
 }
@@ -67,6 +71,24 @@ div.flex {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
 }
 
 /*Шапка Главной страницы (main/header)*/
@@ -428,6 +450,10 @@ header .menu ul li {
     font-weight: 600;
 }
 
+.calcResult li {
+    box-shadow: 0px 8px 0px 11px rgba(0, 0, 0, 0.11);
+}
+
 .mt50 {
     margin-top: 50px;
 }
@@ -543,6 +569,7 @@ header .menu ul li {
 }
 
 .checkCompany {
+    position: relative;
     width: 260px;
     height: 405px;
     text-align: left;
@@ -553,15 +580,25 @@ header .menu ul li {
 }
 
 .checkCompany div {
+    position: absolute;
     width: 260px;
     height: 60px;
-    background-color: #ff9001;
     text-align: center;
+    left: -1px;
+    bottom: -1px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb20d+0,fa7805+100 */
+    background: #ffb20d; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffb20d 0%, #fa7805 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb20d', endColorstr='#fa7805', GradientType=1); /* IE6-9 */
 }
 
 .checkCompany div a {
     font-size: 17px;
     color: #ffffff;
+    line-height: 55px;
     letter-spacing: 0.050em;
     text-decoration: none;
     text-transform: uppercase;
@@ -577,6 +614,7 @@ header .menu ul li {
 
 .videoPresentation {
     text-align: center;
+    vertical-align: center;
 }
 
 /*Блок преимущества (mail/advantages)*/
@@ -594,7 +632,6 @@ header .menu ul li {
     position: relative;
     z-index: 1;
 }
-
 
 .leftAdv div span:nth-child(2), .rightAdv div span:nth-child(2) {
     font-size: 17px;
@@ -634,8 +671,14 @@ header .menu ul li {
 /*Призыв к регистрации (main/signUp)*/
 
 .signUp {
-    background-color: #ff8111;
     height: 200px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb20d+0,fa7805+100 */
+    background: #ffb20d; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffb20d 0%, #fa7805 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb20d', endColorstr='#fa7805', GradientType=1); /* IE6-9 */
 }
 
 .signUpTxt span:first-child {
@@ -725,18 +768,20 @@ header .menu ul li {
     float: left;
 }
 
-.lastDeposits {
+.lastDeposits, .lastWithdrawals {
     display: table;
     width: 305px;
     border: 1px solid #ffffff;
     vertical-align: middle;
 }
 
-.depItem {
-    display: table-cell;
-    table-layout: fixed;
+.depItem, .withItem {
+    display: table-row;
     text-align: center;
-    vertical-align: middle;
+}
+
+.lastDeposits .depItem span {
+    display: table-cell;
 }
 
 .wheelItem span:nth-child(1) {
@@ -761,7 +806,7 @@ header .menu ul li {
     height: 470px;
 }
 
-.action .lastWithdrawals li span:nth-child(1) {
+.action .lastWithdrawals div span:nth-child(1) {
     font-size: 15px;
     line-height: 40px;
     color: #ffffff;
@@ -769,7 +814,7 @@ header .menu ul li {
     font-weight: 300;
 }
 
-.action .lastWithdrawals li span:nth-child(2) {
+.action .lastWithdrawals div span:nth-child(2) {
     font-size: 15px;
     line-height: 40px;
     color: #ff692a;
@@ -777,16 +822,12 @@ header .menu ul li {
     font-weight: 600;
 }
 
+.lastWithdrawals .withItemItem span {
+    display: table-cell;
+}
+
 .lastWith {
     float: right;
-}
-
-.lastWithdrawals {
-    display: table;
-}
-
-.lastWithdrawals li {
-    display: table-row;
 }
 
 .action .info {
@@ -849,14 +890,24 @@ header .menu ul li {
     margin-bottom: 560px;
 }
 
-.h2Grad {
+.h2Grad{
     font-size: 40px;
     line-height: 30px;
-    color: #ff7e14;
     letter-spacing: 0.025em;
     font-weight: 600;
     text-transform: uppercase;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb20d+0,fa7805+100 */
+    background: #ffb20d; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffb20d 0%, #fa7805 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb20d', endColorstr='#fa7805', GradientType=1); /* IE6-9 */
 }
+
 
 .mb60 {
     margin-bottom: 60px;
@@ -864,7 +915,6 @@ header .menu ul li {
 
 .btnBorderClean button {
     font-size: 24px;
-    color: #ff7e14;
     letter-spacing: 0.025em;
     font-weight: 600;
     text-transform: uppercase;
@@ -872,6 +922,16 @@ header .menu ul li {
     height: 70px;
     background-color: transparent;
     border: 3px solid #ff7e14;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb20d+0,fa7805+100 */
+    background: #ffb20d; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffb20d 0%, #fa7805 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffb20d 0%, #fa7805 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb20d', endColorstr='#fa7805', GradientType=1); /* IE6-9 */
 }
 
 
