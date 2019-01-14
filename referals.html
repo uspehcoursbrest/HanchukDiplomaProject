@@ -11,23 +11,23 @@
 <Header>
     <div class="RefHeadBackImg" style="background-image: url(img/jpeg/referral_Head.jpg)"></div>
     <div class="container">
-
         <div class="menu">
             <ul>
                 <li><a href="#">home</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">referral program</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">faq</a></li>
-                <li><a href="#">terms</a></li>
-                <li><a href="#">rate us</a></li>
-                <li><a href="#">support</a></li>
+                <li><span class="headMenuWheel"></span><a href="#">about us</a></li>
+                <li><span class="headMenuWheel"></span><a href="#">referral program</a></li>
+                <li><span class="headMenuWheel"></span><a href="#">news</a></li>
+                <li><span class="headMenuWheel"></span><a href="#">faq</a></li>
+                <li><span class="headMenuWheel"></span><a href="#">terms</a></li>
+                <li><span class="headMenuWheel"></span><a href="#">rate us</a></li>
+                <li><span class="headMenuWheel"></span><a href="#">support</a></li>
             </ul>
         </div>
-        <div>
+        <div class="p2l2">
             <div class="logo">
-                <div class="inline">
+                <div class="inline invisLink">
                     <img src="img/png/logoGrad.png" alt="logo">
+                    <a href="#">Ссылка лого</a>
                 </div>
                 <div class="logoTxt inline">
                     <div>atlantic</div>
@@ -36,16 +36,16 @@
                 </div>
             </div>
             <div class="communication">
-                <div>
+                <div class="inline">
                     <a href="#" class="icon-soc">
                         <span class="path1"></span><span class="path2"></span><span class="path3"></span>
                     </a>
                 </div>
-                <div>
+                <div class="inline">
                     <a href="#" class="icon-phone"><span class="path1"></span><span class="path2"></span><span
                             class="path3"></span><span class="path4"></span></a>
                 </div>
-                <div class="tel">
+                <div class="tel inline">
                     <div>
                         <a href="tel:+44 7911 123-456">
                             <span class="small">+44 7911</span>
@@ -58,14 +58,16 @@
                 </div>
             </div>
             <div class="exit">
-                <div>Welcome!</div>
-                <div>Anderson 346</div>
-                <div>
+                <div class="inline">
+                    <div>Welcome!</div>
+                    <div>Anderson 346</div>
+                </div>
+                <div class="inline">
                     <a href="#" class="icon-exit"><span class="path1"></span><span class="path2"></span></a>
                 </div>
             </div>
         </div>
-        <div class="floatLine3 clear">
+        <div class="p2l3">
             <div class="user clear">
                 <div class="userPhoto inline" style="background-image: url(img/png/userPhoto1.png);"></div>
                 <div class="inline">
@@ -76,19 +78,19 @@
             </div>
             <div class="lastSeen">
                 <span>Last seen:</span>
-                <span>23.05.2018  14:45</span>
+                <span class="mb5">23.05.2018  14:45</span>
                 <span>With IP adress:</span>
                 <span>92.189.112.456</span>
             </div>
             <div>
-                <button class="depWidthButton"><span class="icon-arrowTop"></span>Deposit</button>
+                <button class="btnClr1"><span class="icon-arrowTop"></span>Deposit</button>
             </div>
             <div>
-                <button class="depWidthButton"><span class="icon-arrowDown"></span>Withdraw</button>
+                <button class="btnClr2"><span class="icon-arrowDown"></span>Withdraw</button>
             </div>
         </div>
         <div class="balance clear">
-            <div>
+            <div class="balAmount">
                 <div class="balanceIcon inline"><span class="icon-yrBalance"><span class="path1"></span><span
                         class="path2"></span><span
                         class="path3"></span><span class="path4"></span></span>
@@ -99,16 +101,20 @@
                 </div>
             </div>
             <div>
-                <div><span></span><span class="refBalTxt">1520.32$</span></div>
-                <div><span></span><span class="refBalTxt">1520.32$</span></div>
+                <div>
+                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span>
+                </div>
+                <div>
+                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span>
+                </div>
             </div>
             <div>
-                <div><span></span><span class="refBalTxt">1520.32$</span></div>
-                <div><span></span><span class="refBalTxt">1520.32$</span></div>
+                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
+                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
             </div>
             <div>
-                <div><span></span><span class="refBalTxt">1520.32$</span></div>
-                <div><span></span><span class="refBalTxt">1520.32$</span></div>
+                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
+                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
             </div>
         </div>
         <ul class="contentMenu">
@@ -146,49 +152,54 @@
             </div>
         </div>
         <h3 class="h3RefWhiteBold">referral ins/signup</h3>
-        <div class="refIns">
-            <div class="refFrom">
-                <label for="monthFrom">From:</label>
-                <select name="month" id="monthFrom">
-                    <option value="May">May</option>
-                </select>
-                <select name="day" id="dayFrom">
-                    <option value="20">20</option>
-                </select>
-                <select name="year" id="yearFrom">
-                    <option value="2018">2018</option>
-                </select>
-            </div>
-            <div class="refTo">
-                <label for="monthTo">To:</label>
-                <select name="month" id="monthTo">
-                    <option value="May">May</option>
-                </select>
-                <select name="day" id="dayTo">
-                    <option value="20">20</option>
-                </select>
-                <select name="year" id="yearTo">
-                    <option value="2018">2018</option>
-                </select>
+        <div class="insSign">
+            <div class="refIns">
+                <div class="refFrom">
+                    <label for="monthFrom">From:</label>
+                    <select name="month" id="monthFrom">
+                        <option value="May">May</option>
+                    </select>
+                    <select name="day" id="dayFrom">
+                        <option value="20">20</option>
+                    </select>
+                    <select name="year" id="yearFrom">
+                        <option value="2018">2018</option>
+                    </select>
+                </div>
+                <div class="refTo">
+                    <label for="monthTo">To:</label>
+                    <select name="month" id="monthTo">
+                        <option value="May">May</option>
+                    </select>
+                    <select name="day" id="dayTo">
+                        <option value="20">20</option>
+                    </select>
+                    <select name="year" id="yearTo">
+                        <option value="2018">2018</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="refDate">
             <ul>
                 <li><span class="RefTableSpan">date</span><span class="RefTableSpan"> ins</span><span
                         class="RefTableSpan"> signup</span></li>
-                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 20</span><span class="refDate3"> 59</span></li>
-                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 15</span><span class="refDate3"> 42</span></li>
-                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 38</span><span class="refDate3"> 26</span></li>
+                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 20</span><span
+                        class="refDate3"> 59</span></li>
+                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 15</span><span
+                        class="refDate3"> 42</span></li>
+                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 38</span><span
+                        class="refDate3"> 26</span></li>
             </ul>
         </div>
         <div class="yrRefTable">
-            <h3 class="h3RefWhiteBold">Your Referrals</h3>
+            <h3 class="h3RefWhiteBold taCenter">Your Referrals</h3>
             <ul>
                 <li>
                     <span>Nickname:</span>
                     <span>makhael3478</span>
                     <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
+                    <span><a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a></span>
                     <span>Status:</span>
                     <span>No deposit eat</span>
                 </li>
@@ -303,10 +314,10 @@
         </div>
     </div>
 </div>
-<Footer>
+<footer>
     <div class="container">
-        <p>© 2018 Atlantic Oil LTD. All rights reserved.</p>
+        <p class="footTxt">© 2018 Atlantic Oil LTD. All rights reserved.</p>
     </div>
-</Footer>
+</footer>
 </body>
 </html>
