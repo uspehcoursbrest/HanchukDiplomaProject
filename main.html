@@ -120,63 +120,65 @@
         <div class="container">
             <h3 class="h3blackLight">your profit</h3>
             <h2 class="h2blackBold mb195">Calculator</h2>
-            <div class="calcDep">
-                <div class="inline">
-                    <label for="plan">SELECT PLAN:</label>
-                    <div>
-                        <select name="plan" id="plan">
-                            <!--Тут заселектим планы для выбора-->
-                            <option value="Plan 4 $ 2501 - $ 5000 180% After 5 Days" selected>Plan 4 $ 2501 - $ 5000
-                                180%
-                                After 5 Days
-                            </option>
-                        </select>
+            <div class="calcWhiteImg mb195">
+                <div class="calcDep mb50">
+                    <div class="plan inline">
+                        <label for="plan">SELECT PLAN:</label>
+                        <div>
+                            <select name="plan" id="plan">
+                                <!--Тут заселектим планы для выбора-->
+                                <option value="Plan 4 $ 2501 - $ 5000 180% After 5 Days" selected>
+                                    <span class="planTxt">Plan 4</span>
+                                    <span>$ 2501 - $ 5000 180% After 5 Days</span>
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="enterAmount inline">
+                        <label for="enter">ENTER AMOUNT:</label>
+                        <div>
+                            <input type="text" id="enter" name="enter">
+                        </div>
+                    </div>
+                    <div class="CalcDepAmount inline">
+                        <div>Deposit amount:</div>
+                        <div>3001 $</div>
                     </div>
                 </div>
-                <div class="inline">
-                    <label for="enter">ENTER AMOUNT:</label>
+                <div class="calcAmount mb45">
+                    <label for="polzun">SELECT AMOUNT:</label>
+                    <!--Ползун-->
                     <div>
-                        <input type="text" id="enter" name="enter">
+                        <input type="text" id="polzun" name="polzun">
                     </div>
                 </div>
-                <div class="CalcDepAmount inline">
-                    <div>Deposit amount:</div>
-                    <div>3001 $</div>
+                <ul class="calcResult">
+                    <li class="calcResultborder">
+                        <div>Selected plan:</div>
+                        <div>Plan 4</div>
+                    </li>
+                    <li class="calcResultborder">
+                        <div>Deposit period:</div>
+                        <div>5 Days</div>
+                    </li>
+                    <li class="calcResultborder">
+                        <div>Deposit percent:</div>
+                        <div>180%</div>
+                    </li>
+                    <li class="whiteTxtResult calcResultColor1">
+                        <div>Dayly profit:</div>
+                        <div>715.98 $</div>
+                    </li>
+                    <li class="whiteTxtResult calcResultColor2">
+                        <div>Total profit:</div>
+                        <div>47335.60 $</div>
+                    </li>
+                </ul>
+                <div class="calcAction">
+                    <div class="blackTxt mt50">Get moneyAll payments are made after the end of the deposit period.</div>
+                    <div class="blackTxt mb50">The deposit is included in the payments.</div>
+                    <button class="btnFillColor3">get money</button>
                 </div>
-            </div>
-            <div class="calcAmount">
-                <label for="polzun">SELECT AMOUNT:</label>
-                <!--Ползун-->
-                <div>
-                    <input type="text" id="polzun" name="polzun">
-                </div>
-            </div>
-            <ul class="calcResult">
-                <li class="calcResultborder">
-                    <div>Selected plan:</div>
-                    <div>Plan 4</div>
-                </li>
-                <li class="calcResultborder">
-                    <div>Deposit period:</div>
-                    <div>5 Days</div>
-                </li>
-                <li class="calcResultborder">
-                    <div>Deposit percent:</div>
-                    <div>180%</div>
-                </li>
-                <li class="whiteTxtResult calcResultColor1">
-                    <div>Dayly profit:</div>
-                    <div>715.98 $</div>
-                </li>
-                <li class="whiteTxtResult calcResultColor2">
-                    <div>Total profit:</div>
-                    <div>47335.60 $</div>
-                </li>
-            </ul>
-            <div class="calcAction">
-                <div class="blackTxt mt50">Get moneyAll payments are made after the end of the deposit period.</div>
-                <div class="blackTxt mb50">The deposit is included in the payments.</div>
-                <button class="btnFillColor3 mb410">get money</button>
             </div>
         </div>
     </div>
@@ -199,7 +201,7 @@
                             <a href="#">check company</a>
                         </div>
                     </div>
-                    <div class="inline">
+                    <div class="imgLicence inline">
                         <img src="img/jpeg/certificate.jpg" alt="certificate">
                     </div>
                 </div>
@@ -238,13 +240,13 @@
             <div class="leftAdv mb245 clear">
                 <div class="advItem">
                     <span class="icon-adv1"><span class="path1"></span><span class="path2"></span></span>
-                    <span>FAVORABLE INVESTMENTS</span>
+                    <span class="title">FAVORABLE INVESTMENTS</span>
                     <p>We will provide you a stable <br>profit which won’t depend on<br> a deposit.</p>
                 </div>
                 <div class="advItem">
           <span class="icon-adv2"><span class="path1"></span><span class="path2"></span><span
                   class="path3"></span></span>
-                    <span>USER-FRIENDLY INTERFACE</span>
+                    <span class="title">USER-FRIENDLY INTERFACE</span>
                     <p>The personal area is simple and<br> clear, all information and buttons <br>are placed on the
                         main
                         page.</p>
@@ -252,7 +254,7 @@
                 <div class="advItem">
           <span class="icon-adv3"><span class="path1"></span><span class="path2"></span><span
                   class="path3"></span></span>
-                    <span>REFERRAL PROGRAM</span>
+                    <span class="title">REFERRAL PROGRAM</span>
                     <p>We do increase profit<br> and minimize expenses, and investors<br> get a favorable
                         percentage.
                     </p>
@@ -262,19 +264,19 @@
                 <div class="advItem">
           <span class="icon-adv4"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span
                   class="path4"></span></span>
-                    <span>INVESTMENTS SCHEDULE</span>
+                    <span class="title">INVESTMENTS SCHEDULE</span>
                     <p>You can independently trace the<br> plan of investments on our<br> website.</p>
                 </div>
                 <div class="advItem">
                     <span class="icon-adv5"><span class="path1"></span><span class="path2"></span></span>
-                    <span>FAST WITHDRAWAL</span>
+                    <span class="title">FAST WITHDRAWAL</span>
                     <p>The request for withdrawal is<br> considered immediately, and<br> funds are transferred in 48
                         hours.</p>
                 </div>
                 <div class="advItem">
           <span class="icon-adv6"><span class="path1"></span><span class="path2"></span><span
                   class="path3"></span></span>
-                    <span>USER-FRIENDLY CHAT</span>
+                    <span class="title">USER-FRIENDLY CHAT</span>
                     <p>We are always ready to help.<br> Employee of a technical support is<br> available round the
                         clock.</p>
                 </div>
@@ -311,62 +313,60 @@
                     <span class="iconCaps block">DEPOSITS</span>
                 </div>
                 <div class="lastDeposits">
-                    <div>
-                        <div class="depItem">
-                            <span>ewisjohn</span><span>$ 1700.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>maputrinh</span><span>$ 257.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>sugus</span><span>$ 2835.00</span><span
-                                style="background-image: url(img/png/p.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>nguyendung</span><span>$ 750.00</span><span
-                                style="background-image: url(img/png/A.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>ymys</span><span>$ 1700.00</span><span
-                                style="background-image: url(img/png/b.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>ivanapre</span><span>$ 3100.00</span><span
-                                style="background-image: url(img/png/b.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>skybitcoins</span><span>$ 5670.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>van507</span><span>$ 257.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>shamshaan</span><span>$ 2835.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="depItem">
-                            <span>nguyendung</span><span>$ 750.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
+                    <div class="depItem">
+                        <span>ewisjohn</span><span>$ 1700.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>maputrinh</span><span>$ 257.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>sugus</span><span>$ 2835.00</span><span
+                            style="background-image: url(img/png/p.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>nguyendung</span><span>$ 750.00</span><span
+                            style="background-image: url(img/png/A.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>ymys</span><span>$ 1700.00</span><span
+                            style="background-image: url(img/png/b.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>ivanapre</span><span>$ 3100.00</span><span
+                            style="background-image: url(img/png/b.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>skybitcoins</span><span>$ 5670.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>van507</span><span>$ 257.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>shamshaan</span><span>$ 2835.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="depItem">
+                        <span>nguyendung</span><span>$ 750.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
                     </div>
                 </div>
             </div>
             <div class="wheel clear inline">
                 <div class="wheelImg bgFilling" style="background-image: url(img/png/wheel.png)"></div>
-                <div class="wheelItem gray">
+                <div class="wheelItem wheelGray">
                     <span class="cost1">374057$</span>
                     <span class="cost2">Profit Total</span>
                 </div>
-                <div class="wheelItem orange">
+                <div class="wheelItem wheelOrange">
                     <span class="cost1">458358$</span>
                     <span class="cost2">Deposits</span>
                     <span class="cost2">Total</span>
                 </div>
-                <div class="wheelItem yellow">
+                <div class="wheelItem wheelYellow">
                     <span class="cost1">25748</span>
                     <span class="cost2">Number of</span>
                     <span class="cost2">Investors</span>
@@ -381,47 +381,45 @@
                     <span class="iconCaps block">WITHDRAWALS</span>
                 </div>
                 <div class="lastWithdrawals">
-                    <div>
-                        <div class="withItem">
-                            <span>ewisjohn</span><span>$ 1700.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>maputrinh</span><span>$ 257.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>sugus</span><span>$ 2835.00</span><span
-                                style="background-image: url(img/png/p.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>nguyendung</span><span>$ 750.00</span><span
-                                style="background-image: url(img/png/A.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>ymys</span><span>$ 1700.00</span><span
-                                style="background-image: url(img/png/b.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>ivanapre</span><span>$ 3100.00</span><span
-                                style="background-image: url(img/png/b.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>skybitcoins</span><span>$ 5670.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>van507</span><span>$ 257.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>shamshaan</span><span>$ 2835.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
-                        <div class="withItem">
-                            <span>nguyendung</span><span>$ 750.00</span><span
-                                style="background-image: url(img/png/pm.png)"></span>
-                        </div>
+                    <div class="withItem">
+                        <span>ewisjohn</span><span>$ 1700.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>maputrinh</span><span>$ 257.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>sugus</span><span>$ 2835.00</span><span
+                            style="background-image: url(img/png/p.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>nguyendung</span><span>$ 750.00</span><span
+                            style="background-image: url(img/png/A.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>ymys</span><span>$ 1700.00</span><span
+                            style="background-image: url(img/png/b.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>ivanapre</span><span>$ 3100.00</span><span
+                            style="background-image: url(img/png/b.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>skybitcoins</span><span>$ 5670.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>van507</span><span>$ 257.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>shamshaan</span><span>$ 2835.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
+                    </div>
+                    <div class="withItem">
+                        <span>nguyendung</span><span>$ 750.00</span><span
+                            style="background-image: url(img/png/pm.png)"></span>
                     </div>
                 </div>
             </div>
