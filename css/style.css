@@ -384,11 +384,11 @@ header .menu ul li {
 }
 
 .calcWhiteImg {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.7);
     width: 1176px;
     height: 760px;
-    opacity: 0.7;
     padding: 60px 80px;
+    box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.53);
 }
 
 .h3blackLight {
@@ -537,6 +537,7 @@ header .menu ul li {
     width: 211px;
     height: 56px;
     background-color: #06141b;
+    box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.22);
 }
 
 .mb410 {
@@ -559,17 +560,18 @@ header .menu ul li {
     z-index: 1;
 }
 
-.about .videoPresBackImg {
-    width: 1235px;
-    height: 707px;
-    position: absolute;
-    z-index: -1;
-    margin-bottom: 100px;
+.videoPres {
+    width: 1170px;
+    height: 650px;
+    position: relative;
 }
 
-.videoPresBackImg {
-    position: relative;
-    z-index: 1;
+.videoPres iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
 }
 
 .mb120 {
@@ -1089,6 +1091,9 @@ header .menu ul li {
 
 /*Блок с картой (main/map)*/
 
+.map {
+    width: 100%;
+}
 /*Подвал (main/footer)*/
 
 footer .copyright div {
