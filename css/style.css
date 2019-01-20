@@ -115,12 +115,27 @@ header .headerImg {
     z-index: 1;
 }
 
+.mt55 {
+    margin-top: 55px;
+}
+
+.mainLogo {
+    margin-right: 5px;
+}
+
+.logoTxt {
+    position: absolute;
+}
+
 .logoTxt div:nth-child(1) {
     font-family: "Podkova";
     font-size: 19.72px;
     color: #ff9001;
     font-weight: 800;
     text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    left: 3px;
 }
 
 .logoTxt div:nth-child(2) {
@@ -138,6 +153,9 @@ header .headerImg {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.6em;
+    position: relative;
+    top: -10px;
+    left: 3px;
 }
 
 .logoFloat {
@@ -220,13 +238,21 @@ header .menu .headMenuWheel {
     background-repeat: no-repeat;
     position: absolute;
     top: 4px;
-    left: -40px;
+    left: -47px;
 }
 
 header .menu ul li {
     display: inline-block;
-    margin: 30px;
+    margin: 30px 37.75px;
     position: relative;
+}
+
+header .menu ul li:last-child {
+    margin-right: 0px;
+}
+
+header .menu ul li:first-child {
+    margin-left: 0px;
 }
 
 .mb155 {
@@ -299,6 +325,14 @@ header .menu ul li {
     margin-bottom: 245px;
 }
 
+.titleMarker {
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+    color: #ff9001;
+    margin-bottom: 15px;
+}
+
 .h3whiteLight {
     font-size: 18px;
     line-height: 70px;
@@ -331,7 +365,7 @@ header .menu ul li {
 }
 
 .cards div div:nth-child(2) {
-    /*картинка*/
+    font-size: 400%;
 }
 
 .cards div div:nth-child(3) {
@@ -431,7 +465,7 @@ header .menu ul li {
     font-weight: 600;
 }
 
-.plan select{
+.plan select {
     width: 505px;
     height: 60px;
     margin-right: 30px;
@@ -482,11 +516,15 @@ header .menu ul li {
 }
 
 .calcResultColor1 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.calcResultColor2 {
     background-color: #ff9001;
     text-align: center;
 }
 
-.calcResultColor2 {
+.calcResultColor3 {
     background-color: #ff692a;
     text-align: center;
 }
@@ -637,7 +675,7 @@ header .menu ul li {
     border: 1px solid #ffffff;
     padding: 25px;
     margin: 0px 45px 0px 45px;
-    box-shadow: 0px 11px 21px 0px rgba(0,0,0,0.53);
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 }
 
 .checkCompany div {
@@ -673,9 +711,19 @@ header .menu ul li {
     margin-bottom: 520px;
 }
 
+/*Видео*/
+
 .videoPresentation {
     text-align: center;
     vertical-align: center;
+}
+
+iframe button.ytp-large-play-button .ytp-button {
+    display: none !important;
+}
+
+iframe .ytp-cued-thumbnail-overlay {
+    display: none !important;
 }
 
 
@@ -721,6 +769,7 @@ header .menu ul li {
     width: 50%;
     text-align: right;
 }
+
 .leftAdv {
     position: relative;
     padding-left: 100px;
@@ -866,7 +915,7 @@ header .menu ul li {
     width: 305px;
     border: 1px solid #555555;
     vertical-align: middle;
-    box-shadow: 0px 11px 21px 0px rgba(0,0,0,0.51);
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.51);
 }
 
 .depItem, .withItem {
@@ -875,21 +924,26 @@ header .menu ul li {
     height: 40px;
 }
 
-.depItem span:last-child, .withItem span:last-child {
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    background-color: #555555;
-    border-bottom: 1px solid #555555;
-}
-
 .lastDeposits .depItem span, .lastWithdrawals .withItem span {
     display: table-cell;
     text-align: left;
     padding-left: 20px;
     border-bottom: 1px solid #555555;
+}
+
+.depItem div, .withItem div {
+    padding: 6px;
+    width: 42px;
+    height: 42px;
+    border-bottom: 1px solid #555555;
+}
+
+.depItem div span, .withItem div span {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    background-color: #555555;
 }
 
 .wheelItem .cost1 {
@@ -1093,7 +1147,9 @@ header .menu ul li {
 
 .map {
     width: 100%;
+    height: 640px;
 }
+
 /*Подвал (main/footer)*/
 
 footer .copyright div {
@@ -1151,7 +1207,6 @@ footer .footContact p {
     font-size: 15px;
     line-height: 21px;
     color: #ffffff;
-    font-weight: 600;
     letter-spacing: 0.025em;
 }
 
@@ -1160,6 +1215,7 @@ footer .footContact p {
     line-height: 21px;
     color: #ffffff;
     letter-spacing: 0.025em;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -1167,6 +1223,7 @@ footer .footContact p {
     font-size: 15px;
     line-height: 21px;
     color: #ff6b28;
+    font-weight: 400;
     letter-spacing: 0.025em;
     text-transform: none;
 }
@@ -1206,6 +1263,14 @@ header .RefHeadBackImg {
     z-index: 1;
 }
 
+.pt50 {
+    padding-top: 50px;
+}
+
+.pt45 {
+    padding-top: 45px;
+}
+
 /*.floatLine2 div {*/
 /*float: left;*/
 /*width: 33.3333%;*/
@@ -1240,19 +1305,19 @@ header .RefHeadBackImg {
 .user {
     width: 260px;
     height: 110px;
-    background-color: #000000;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px 0 0 20px;
     border: 2px solid #4d5254;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 }
 
 .lastSeen {
     width: 260px;
     height: 110px;
-    background-color: #000000;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.6);;
     padding: 10px 0 0 20px;
     border: 2px solid #4d5254;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 }
 
 .mb5 {
@@ -1313,29 +1378,48 @@ header .RefHeadBackImg {
 }
 
 .btnClr1 {
-    font-family: Podkova;
-    font-size: 24px;
-    color: #05141b;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
     width: 260px;
     height: 110px;
     background-color: #ff9001;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 }
 
-.btnClr2 {
+.btnClr1 span:last-child {
     font-family: Podkova;
     font-size: 24px;
     color: #05141b;
     letter-spacing: 0.025em;
     text-transform: uppercase;
-    display: block;
     font-weight: 600;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+}
+
+.btnClr2 {
     width: 260px;
     height: 110px;
     background-color: #ff692a;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+}
+
+.btnClr2 span:last-child {
+    font-family: Podkova;
+    font-size: 24px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+}
+
+.icon-arrowDown, .icon-arrowTop {
+    font-size: 500%;
+    margin-right: 10px;
+    display: inline-block;
+    height: 100%;
 }
 
 .icon-yrBalance {
@@ -1361,24 +1445,40 @@ header .RefHeadBackImg {
 
 /*Иконка валюты*/
 
+.currency {
+    width: 37px;
+    height: 37px;
+    background-color: #4d5254;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.currencyAmount {
+    border: 2px solid #4d5254;
+    vertical-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .balance .refBalTxt {
     font-size: 20px;
-    line-height: 53px;
     color: #ff9001;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.025em;
 }
 
-.balAmount {
-    width: 300px;
-    height: 110px;
+.balance {
+    display: flex;
+    margin: 30px 0px;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 }
 
 .balance > div {
     float: left;
     width: 25%;
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid #4d5254;
 }
 
@@ -1406,6 +1506,7 @@ header .RefHeadBackImg {
 .contentMenu {
     border: 2px solid #4d5254;
     background-color: #05141b;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 
 }
 
@@ -1452,6 +1553,15 @@ header .RefHeadBackImg {
     border-radius: 50%;
 }
 
+.borderPhoto {
+    width: 94px;
+    height: 94px;
+    border: 2px solid #4d5254;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 35px;
+}
+
 .h3RefWhiteBold {
     font-size: 24px;
     line-height: 70px;
@@ -1462,10 +1572,22 @@ header .RefHeadBackImg {
     font-weight: 600;
 }
 
-.upline > div, .stat > ul {
-    width: 550px;
+.upline > div {
     height: 245px;
     border: 2px solid #4d5254;
+    text-align: center;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+}
+
+.stat > div {
+    height: 245px;
+    border: 2px solid #4d5254;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+}
+
+.statTable > div:nth-child(2) {
+    border-top: 2px solid #4d5254;
+    border-bottom: 2px solid #4d5254;
 }
 
 .upline a {
@@ -1482,43 +1604,77 @@ header .RefHeadBackImg {
     padding: 23px;
 }
 
-.stat li span:nth-child(1) {
+.statTable div {
+    height: 33.33333%;
+    padding: 15px;
+}
+
+.statTable div span:nth-child(1) {
     font-size: 15px;
-    line-height: 80px;
     color: #ff9001;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
     text-align: left;
+    width: 50%;
+    vertical-align: bottom;
 }
 
-.stat li span:nth-child(2) {
+.statTable div span:nth-child(2) {
     font-size: 20px;
-    line-height: 80px;
     color: #ff692a;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
     text-align: right;
+    width: 50%;
 }
 
-.refIns label {
+.insSign label {
     font-size: 17px;
-    line-height: 30px;
     color: #ffffff;
     letter-spacing: 0.025em;
     font-weight: 600;
+    margin: 10px;
 }
 
-.refIns > div {
+.insSign > div {
     float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.refFrom, .refTo {
     width: 50%;
 }
 
 .insSign {
     width: 1170px;
     height: 150px;
-    background-color: #ff6b28;
+    background-color: #05141b;
+    margin-bottom: 40px;
+    border: 2px solid #4d5254;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+}
+
+.insSign select {
+    height: 45px;
+    border: 1px solid #4d5254;
+    background-color: transparent;
+    margin: 10px;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 5px;
+    font-family: "Roboto Slab";
+}
+
+select#dayFrom, select#dayTo, select#yearFrom, select#yearTo {
+    width: 142px;
+}
+
+select#monthFrom, select#monthTo {
+    width: 190px;
 }
 
 .refDate .RefTableSpan {
@@ -1531,12 +1687,26 @@ header .RefHeadBackImg {
     background-color: orange;
 }
 
+.rts1 {
+    padding-left: 40px;
+}
+
+.rts2 {
+
+}
+
+.rts3 {
+    text-align: center;
+}
+
 .refDate .refDate1 {
     font-size: 15px;
     line-height: 50px;
     color: #ffffff;
     font-weight: 600;
     letter-spacing: 0.025em;
+    width: 46%;
+    padding-left: 15px;
 }
 
 .refDate .refDate2 {
@@ -1545,6 +1715,7 @@ header .RefHeadBackImg {
     color: #ff9001;
     font-weight: 600;
     letter-spacing: 0.025em;
+    width: 38%;
 }
 
 .refDate .refDate3 {
@@ -1553,15 +1724,23 @@ header .RefHeadBackImg {
     color: #ff692a;
     font-weight: 600;
     letter-spacing: 0.025em;
+    width: 16%;
+    text-align: center;
 }
 
 .refDate ul {
     display: table;
     width: 100%;
+    border: 2px solid #4d5254;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 }
 
 .refDate ul li {
     display: table-row;
+}
+
+.tableBorderBottom {
+    border-bottom: 2px solid #4d5254;
 }
 
 .refDate ul li span {
@@ -1570,81 +1749,114 @@ header .RefHeadBackImg {
 
 /*Таблица с рефералами клиента*/
 
-.yrRefTable li span:nth-child(1), li span:nth-child(3), li span:nth-child(5) {
+.yrRefTableTxt1 {
     font-size: 17px;
-    line-height: 50px;
     color: #ffffff;
     font-weight: 600;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.025em
 }
 
-.yrRefTable li span:nth-child(2) {
+.yrRefTableTxt2 {
     font-size: 17px;
-    line-height: 50px;
     color: #ff692a;
     font-weight: 600;
     letter-spacing: 0.025em;
 }
 
-
-.yrRefTable li a {
+.yrRefTableTxt3 {
     font-size: 15px;
-    line-height: 50px;
     color: #ff9001;
     letter-spacing: 0.025em;
 }
 
-.yrRefTable li span:nth-child(6) {
+.yrRefTableTxt4 {
     font-size: 17px;
-    line-height: 50px;
     color: #bebebe;
     letter-spacing: 0.025em;
+}
+
+.refTableAction {
+    width: 50px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.plus {
+    width: 32px;
+    height: 32px;
+    background-color: #444240;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .yrRefTable ul {
     width: 100%;
     display: table;
     border: 2px solid #4d5254;
+    border-bottom: none;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
 }
 
 .yrRefTable ul li {
     display: table-row;
+
 }
 
-.yrRefTable ul li span {
+.yrRefTable ul li div {
     display: table-cell;
+    border-bottom: 2px solid #4d5254;
 }
 
 /*Кнопки навигации*/
 
 .navigate {
-    margin-left: 450px;
+    padding-bottom: 80px;
+    text-align: center;
 }
 
-.navigate div a {
+.pages div {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 38px;
     color: #ffffff;
     letter-spacing: 0.025em;
     text-decoration: none;
+    cursor: pointer;
+    text-align: center;
 }
 
-.navigate div span {
+.pages div.active{
     font-size: 17px;
-    line-height: 30px;
+    line-height: 38px;
     color: #000000;
     letter-spacing: 0.025em;
-}
-
-.navigate div {
-    display: inline;
+    text-align: center;
+    background-color: #ff6b28;
 }
 
 .naviBorder {
-    background-color: #ff6b28;
-    margin: 3px;
-    border: 1px solid #ffffff;
-    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin: 5px;
+}
+
+.naviBorderLeft a, .naviBorderRight a {
+    display: block;
+    height: 15px;
+    background-repeat: no-repeat;
+    color: #ff692a;
+    background-position: center;
+}
+
+.naviBorderLeft, .naviBorderRight {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 3px solid #ff692a;
+    background-color: transparent;
+    vertical-align: middle;
 }
 
 /*footer страницы Referral*/
@@ -1657,14 +1869,14 @@ footer .footTxt {
     text-align: center;
 }
 
-@media (max-width: 1439px){
+@media (max-width: 1439px) {
 
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
 
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
 
 }

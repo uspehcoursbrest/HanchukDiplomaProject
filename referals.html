@@ -25,18 +25,18 @@
             </ul>
         </div>
         <div class="p2l2">
-            <div class="logo">
-                <div class="inline invisLink">
+            <div class="logo logoFloat">
+                <div class="mainLogo inline invisLink">
                     <img src="img/png/logoGrad.png" alt="logo">
                     <a href="#">Ссылка лого</a>
                 </div>
                 <div class="logoTxt inline">
-                    <div>atlantic</div>
-                    <div>Oil</div>
-                    <div>limited</div>
+                    <div><span>atlantic</span></div>
+                    <div><span>Oil</span></div>
+                    <div><span>limited</span></div>
                 </div>
             </div>
-            <div class="communication">
+            <div class="communication pt50">
                 <div class="inline">
                     <a href="#" class="icon-soc">
                         <span class="path1"></span><span class="path2"></span><span class="path3"></span>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="exit">
+            <div class="exit pt45">
                 <div class="inline">
                     <div>Welcome!</div>
                     <div>Anderson 346</div>
@@ -84,10 +84,10 @@
                 <span>92.189.112.456</span>
             </div>
             <div>
-                <button class="btnClr1"><span class="icon-arrowTop"></span>Deposit</button>
+                <button class="btnClr1"><span class="icon-arrowTop"></span><span>Deposit</span></button>
             </div>
             <div>
-                <button class="btnClr2"><span class="icon-arrowDown"></span>Withdraw</button>
+                <button class="btnClr2"><span class="icon-arrowDown"></span><span>Withdraw</span></button>
             </div>
         </div>
         <div class="balance clear">
@@ -102,20 +102,28 @@
                 </div>
             </div>
             <div>
-                <div>
+                <div class="currencyAmount">
                     <span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span>
                 </div>
-                <div>
+                <div class="currencyAmount">
                     <span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span>
                 </div>
             </div>
             <div>
-                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
-                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
+                <div class="currencyAmount">
+                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
+                        class="refBalTxt">1520.32$</span></div>
+                <div class="currencyAmount">
+                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
+                        class="refBalTxt">1520.32$</span></div>
             </div>
             <div>
-                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
-                <div><span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span></div>
+                <div class="currencyAmount">
+                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
+                        class="refBalTxt">1520.32$</span></div>
+                <div class="currencyAmount">
+                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
+                        class="refBalTxt">1520.32$</span></div>
             </div>
         </div>
         <ul class="contentMenu">
@@ -134,188 +142,294 @@
 <div class="content">
     <div class="RefContBackImg" style="background-image: url(img/jpeg/ReferralContainer.jpg)"></div>
     <div class="container">
+        <h3 class="titleMarker">|</h3>
         <h1 class="h1RefWhite">Referrals</h1>
         <div class="yrStat clear">
             <div class="upline">
+                <h3 class="titleMarker">|</h3>
                 <h3 class="h3RefWhiteBold">Your Upline</h3>
                 <div>
-                    <div class="uplineUserPhoto" style="background-image: url(img/png/uplinePhoto1.png);"></div>
-                    <a href="#">Emersonius3906</a>
+                    <div class="inline">
+                        <div class="borderPhoto">
+                            <div class="uplineUserPhoto" style="background-image: url(img/png/uplinePhoto1.png);"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">Emersonius3906</a>
+                    </div>
                 </div>
             </div>
             <div class="stat">
+                <h3 class="titleMarker">|</h3>
                 <h3 class="h3RefWhiteBold">Statistics</h3>
-                <ul>
-                    <li><span>Total Referral Commision</span><span>58900.23$33</span></li>
-                    <li><span>Referrals</span><span>339</span></li>
-                    <li><span>Active Referrals</span><span>147</span></li>
-                </ul>
+                <div class="statTable">
+                    <div class="flex"><span>Total Referral Commision</span><span>58900.23$</span></div>
+                    <div class="flex"><span>Referrals</span><span>339</span></div>
+                    <div class="flex"><span>Active Referrals</span><span>147</span></div>
+                </div>
             </div>
         </div>
+        <h3 class="titleMarker">|</h3>
         <h3 class="h3RefWhiteBold">referral ins/signup</h3>
         <div class="insSign">
-            <div class="refIns">
-                <div class="refFrom">
-                    <label for="monthFrom">From:</label>
-                    <select name="month" id="monthFrom">
-                        <option value="May">May</option>
-                    </select>
-                    <select name="day" id="dayFrom">
-                        <option value="20">20</option>
-                    </select>
-                    <select name="year" id="yearFrom">
-                        <option value="2018">2018</option>
-                    </select>
-                </div>
-                <div class="refTo">
-                    <label for="monthTo">To:</label>
-                    <select name="month" id="monthTo">
-                        <option value="May">May</option>
-                    </select>
-                    <select name="day" id="dayTo">
-                        <option value="20">20</option>
-                    </select>
-                    <select name="year" id="yearTo">
-                        <option value="2018">2018</option>
-                    </select>
-                </div>
+            <div class="refFrom">
+                <label for="monthFrom" class="block">From:</label>
+                <select name="month" id="monthFrom">
+                    <option value="May">May</option>
+                    <option value="May">April</option>
+                    <option value="May">June</option>
+                </select>
+                <select name="day" id="dayFrom">
+                    <option value="20">20</option>
+                </select>
+                <select name="year" id="yearFrom">
+                    <option value="2018">2018</option>
+                </select>
+            </div>
+            <div class="refTo">
+                <label for="monthTo" class="block">To:</label>
+                <select name="month" id="monthTo">
+                    <option value="May">May</option>
+                    <option value="May">April</option>
+                    <option value="May">June</option>
+                </select>
+                <select name="day" id="dayTo">
+                    <option value="20">20</option>
+                </select>
+                <select name="year" id="yearTo">
+                    <option value="2018">2018</option>
+                </select>
             </div>
         </div>
         <div class="refDate">
             <ul>
-                <li><span class="RefTableSpan">date</span><span class="RefTableSpan"> ins</span><span
-                        class="RefTableSpan"> signup</span></li>
-                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 20</span><span
-                        class="refDate3"> 59</span></li>
-                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 15</span><span
-                        class="refDate3"> 42</span></li>
-                <li><span class="refDate1">May-20-2018</span><span class="refDate2"> 38</span><span
-                        class="refDate3"> 26</span></li>
+                <li>
+                    <span class="RefTableSpan rts1 tableBorderBottom"> date</span>
+                    <span class="RefTableSpan rts2 tableBorderBottom"> ins</span>
+                    <span class="RefTableSpan rts3 tableBorderBottom"> signup</span>
+                </li>
+                <li>
+                    <span class="refDate1 tableBorderBottom">May-20-2018</span>
+                    <span class="refDate2 tableBorderBottom"> 20</span>
+                    <span class="refDate3 tableBorderBottom"> 59</span>
+                </li>
+                <li>
+                    <span class="refDate1 tableBorderBottom">May-20-2018</span>
+                    <span class="refDate2 tableBorderBottom"> 15</span>
+                    <span class="refDate3 tableBorderBottom"> 42</span>
+                </li>
+                <li>
+                    <span class="refDate1">May-20-2018</span>
+                    <span class="refDate2"> 38</span>
+                    <span class="refDate3"> 26</span>
+                </li>
             </ul>
         </div>
-        <div class="yrRefTable">
+        <div class="yrRefTable mb70">
+            <h3 class="titleMarker">|</h3>
             <h3 class="h3RefWhiteBold taCenter">Your Referrals</h3>
             <ul>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <span><a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a></span>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
-
-                    <!--открыто-->
-
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Nickname:</span>
-                    <span>makhael3478</span>
-                    <span>E-mail:</span>
-                    <a href="mailto:michahel3578@gmail.com">michahel3578@gmail.com</a>
-                    <span>Status:</span>
-                    <span>No deposit eat</span>
+                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+                    <div>
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
                 </li>
             </ul>
         </div>
         <div class="navigate">
-            <div class="naviBorder">
+            <div class="naviBorderLeft">
                 <!--стрелка влево-->
-                <a href="#"></a>
+                <a href="#" style="background-image: url(img/svg/arrowLeft.svg)"></a>
             </div>
-            <div>
-                <div class="naviBorder"><a href="#">1</a></div>
-                <div class="naviBorder"><span>2</span></div>
-                <div class="naviBorder"><a href="#">3</a></div>
-                <div class="naviBorder"><a href="#">4</a></div>
+            <div class="pages inline">
+                <div class="naviBorder">1</div>
+                <div class="naviBorder active">2</div>
+                <div class="naviBorder">3</div>
+                <div class="naviBorder">4</div>
             </div>
-            <div class="naviBorder">
+            <div class="naviBorderRight">
                 <!--стрелка вправо-->
-                <a href="#"></a>
+                <a href="#" style="background-image: url(img/svg/arrowRight.svg)"></a>
             </div>
         </div>
     </div>
 </div>
-<footer>
+<footer style="background-color: transparent">
     <div class="container">
         <p class="footTxt">© 2018 Atlantic Oil LTD. All rights reserved.</p>
     </div>
