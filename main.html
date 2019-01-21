@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type='text/javascript' src='js/script.js'></script>
+    <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
 </head>
 <body>
 <!--Шапка страницы-->
@@ -26,8 +28,8 @@
                 </div>
             </div>
             <div class="communication communicationFloat">
-                <div class="inline">
-                    <a href="#" class="icon-soc">
+                <div class="soc inline">
+                    <a href="#" class="icon-soc mr">
                         <span class="path1"></span><span class="path2"></span><span class="path3"></span>
                     </a>
                 </div>
@@ -43,7 +45,7 @@
                     </div>
                 </div>
                 <div class="inline">
-                    <a href="#" class="icon-phone"><span class="path1"></span><span class="path2"></span><span
+                    <a href="#" class="icon-phone ml"><span class="path1"></span><span class="path2"></span><span
                             class="path3"></span><span class="path4"></span></a>
                 </div>
             </div>
@@ -63,7 +65,11 @@
     </div>
     <!--Блок баннер-->
     <div class="banner">
-        <div class="container">
+        <div class="container block">
+            <div class="item clock">
+                <span class="time" id="time">20:35</span>
+                <span class="date" id="date">25 Фев 2018</span>
+            </div>
             <div class="headline mb90">
                 <div>Make right</div>
                 <div>investment</div>
@@ -322,44 +328,54 @@
                 </div>
                 <div class="lastDeposits">
                     <div class="depItem">
-                        <span>ewisjohn</span><span>$ 1700.00</span> <div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>ewisjohn</span><span>$ 1700.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>maputrinh</span><span>$ 257.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>maputrinh</span><span>$ 257.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>sugus</span><span>$ 2835.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/p.png)"></span></div>
+                        <span>sugus</span><span>$ 2835.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/p.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>nguyendung</span><span>$ 750.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/A.png)"></span></div>
+                        <span>nguyendung</span><span>$ 750.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/A.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>ymys</span><span>$ 1700.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/b.png)"></span></div>
+                        <span>ymys</span><span>$ 1700.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/b.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>ivanapre</span><span>$ 3100.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/b.png)"></span></div>
+                        <span>ivanapre</span><span>$ 3100.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/b.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>skybitcoins</span><span>$ 5670.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>skybitcoins</span><span>$ 5670.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>van507</span><span>$ 257.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>van507</span><span>$ 257.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>shamshaan</span><span>$ 2835.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>shamshaan</span><span>$ 2835.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="depItem">
-                        <span>nguyendung</span><span>$ 750.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>nguyendung</span><span>$ 750.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                 </div>
             </div>
@@ -390,44 +406,54 @@
                 </div>
                 <div class="lastWithdrawals">
                     <div class="withItem">
-                        <span>ewisjohn</span><span>$ 1700.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>ewisjohn</span><span>$ 1700.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>maputrinh</span><span>$ 257.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>maputrinh</span><span>$ 257.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>sugus</span><span>$ 2835.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/p.png)"></span></div>
+                        <span>sugus</span><span>$ 2835.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/p.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>nguyendung</span><span>$ 750.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/A.png)"></span></div>
+                        <span>nguyendung</span><span>$ 750.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/A.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>ymys</span><span>$ 1700.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/b.png)"></span></div>
+                        <span>ymys</span><span>$ 1700.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/b.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>ivanapre</span><span>$ 3100.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/b.png)"></span></div>
+                        <span>ivanapre</span><span>$ 3100.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/b.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>skybitcoins</span><span>$ 5670.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>skybitcoins</span><span>$ 5670.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>van507</span><span>$ 257.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>van507</span><span>$ 257.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>shamshaan</span><span>$ 2835.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>shamshaan</span><span>$ 2835.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                     <div class="withItem">
-                        <span>nguyendung</span><span>$ 750.00</span><div class="tCell"><span
-                            style="background-image: url(img/png/pm.png)"></span></div>
+                        <span>nguyendung</span><span>$ 750.00</span>
+                        <div class="tCell"><span
+                                style="background-image: url(img/png/pm.png)"></span></div>
                     </div>
                 </div>
             </div>
