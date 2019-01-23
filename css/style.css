@@ -244,7 +244,7 @@ header .menu .menuAction {
     width: 140px;
     text-align: center;
     box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.33);
-    display: none;
+    /*display: none;*/
 }
 
 .date {
@@ -1427,6 +1427,8 @@ header .RefHeadBackImg {
     display: inline-block;
     height: 100%;
     text-align: center;
+    line-height: 110px;
+    vertical-align: middle;
 }
 
 .btnClr2 {
@@ -1434,6 +1436,7 @@ header .RefHeadBackImg {
     height: 110px;
     background-color: #ff692a;
     box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+
 }
 
 .btnClr2 span:last-child {
@@ -1446,6 +1449,8 @@ header .RefHeadBackImg {
     display: inline-block;
     height: 100%;
     text-align: center;
+    line-height: 110px;
+    vertical-align: middle;
 }
 
 .icon-arrowDown, .icon-arrowTop {
@@ -1453,6 +1458,8 @@ header .RefHeadBackImg {
     margin-right: 10px;
     display: inline-block;
     height: 100%;
+    line-height: 110px;
+    vertical-align: middle;
 }
 
 .icon-yrBalance {
@@ -1651,6 +1658,7 @@ header .RefHeadBackImg {
     text-align: left;
     width: 50%;
     vertical-align: bottom;
+    line-height: 50px
 }
 
 .statTable div span:nth-child(2) {
@@ -1661,6 +1669,7 @@ header .RefHeadBackImg {
     letter-spacing: 0.025em;
     text-align: right;
     width: 50%;
+    line-height: 50px
 }
 
 .insSign label {
