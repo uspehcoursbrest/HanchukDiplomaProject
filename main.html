@@ -6,9 +6,15 @@
     <title>Главная</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script type='text/javascript' src='js/script.js'></script>
     <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='js/owl.carousel.min.js'></script>
+    <script type='text/javascript' src='js/ion.rangeSlider.min.js'></script>
+    <script type='text/javascript' src='js/script.js'></script>
 </head>
 <body>
 <!--Шапка страницы-->
@@ -83,36 +89,38 @@
                 <h3 class="titleMarker">|</h3>
                 <h3 class="h3whiteLight">atlantic oil limited</h3>
                 <h2 class="h2whiteBold mb90">Investment offers</h2>
-                <div class="cards taCenter">
-                    <div class="card inline">
-                        <div>01</div>
-                        <div class="icon-ofers1"><span class="path1"></span><span class="path2"></span><span
-                                class="path3"></span><span class="path4"></span></div>
-                        <div>140%</div>
-                        <div>After</div>
-                        <div>1 day</div>
-                    </div>
-                    <div class="card inline">
-                        <div>02</div>
-                        <div class="icon-ofers2"><span class="path1"></span><span class="path2"></span><span
-                                class="path3"></span></div>
-                        <div>300%</div>
-                        <div>After</div>
-                        <div>5 days</div>
-                    </div>
-                    <div class="card inline">
-                        <div>03</div>
-                        <div class="icon-ofers3"><span class="path1"></span><span class="path2"></span></div>
-                        <div>600%</div>
-                        <div>After</div>
-                        <div>10 days</div>
-                    </div>
-                    <div class="card inline">
-                        <div>04</div>
-                        <div class="icon-ofers4"><span class="path1"></span><span class="path2"></span></div>
-                        <div>1200%</div>
-                        <div>After</div>
-                        <div>20 days</div>
+                <div class="slider">
+                    <div class="cards owl-carousel owl-theme">
+                        <div class="card inline item">
+                            <div>01</div>
+                            <div class="icon-ofers1"><span class="path1"></span><span class="path2"></span><span
+                                    class="path3"></span><span class="path4"></span></div>
+                            <div>140%</div>
+                            <div>After</div>
+                            <div>1 day</div>
+                        </div>
+                        <div class="card inline item">
+                            <div>02</div>
+                            <div class="icon-ofers2"><span class="path1"></span><span class="path2"></span><span
+                                    class="path3"></span></div>
+                            <div>300%</div>
+                            <div>After</div>
+                            <div>5 days</div>
+                        </div>
+                        <div class="card inline item">
+                            <div>03</div>
+                            <div class="icon-ofers3"><span class="path1"></span><span class="path2"></span></div>
+                            <div>600%</div>
+                            <div>After</div>
+                            <div>10 days</div>
+                        </div>
+                        <div class="card inline item">
+                            <div>04</div>
+                            <div class="icon-ofers4"><span class="path1"></span><span class="path2"></span></div>
+                            <div>1200%</div>
+                            <div>After</div>
+                            <div>20 days</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,10 +133,10 @@
     <div class="calculator">
         <div class="calcBackImg bgFilling" style="background-image: url(img/jpeg/calculator.jpg)"></div>
         <div class="container">
-            <h3 class="titleMarker">|</h3>
+            <h3 class="titleMarker pt120">|</h3>
             <h3 class="h3blackLight">your profit</h3>
-            <h2 class="h2blackBold mb195">Calculator</h2>
-            <div class="calcWhiteImg mb195">
+            <h2 class="h2blackBold mb90">Calculator</h2>
+            <div class="calcWhiteImg mb70">
                 <div class="calcDep mb50">
                     <div class="plan inline">
                         <label for="plan">SELECT PLAN:</label>
@@ -153,11 +161,11 @@
                         <div>3001 $</div>
                     </div>
                 </div>
-                <div class="calcAmount mb45">
-                    <label for="polzun">SELECT AMOUNT:</label>
+                <div class="calcAmount mb45 range">
+                    <label for="rangeSum">SELECT AMOUNT:</label>
                     <!--Ползун-->
                     <div>
-                        <input type="text" id="polzun" name="polzun">
+                        <input type="text" id="rangeSum" class="rangeSum">
                     </div>
                 </div>
                 <ul class="calcResult">
@@ -194,10 +202,10 @@
     <div class="about">
         <div class="aboutBackImg bgFilling" style="background-image: url(img/jpeg/about.jpg)"></div>
         <div class="container">
-            <h3 class="titleMarker">|</h3>
+            <h3 class="titleMarker mt210">|</h3>
             <h3 class="h3whiteLight">atlantic oil limited</h3>
             <h2 class="h2whiteBold mb120">About company</h2>
-            <div class="license mb300">
+            <div class="license mb195">
                 <div class="aboutCard flex">
                     <div class="checkCompany inline">
                         <span class="white">Atlantic Oil Limited</span>
@@ -236,9 +244,6 @@
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                     </div>
-                    <span class="icon-playVideo mb70"><span class="path1"></span><span class="path2"></span></span>
-                    <h3 class="h3whiteLight">atlantic oil limited</h3>
-                    <h2 class="h2whiteBold">Watch video</h2>
                 </div>
             </div>
 
@@ -248,10 +253,10 @@
     <div class="advantages clear">
         <div class="advBackImg bgFilling" style="background-image: url(img/jpeg/advantages.jpg)"></div>
         <div class="container">
-            <h3 class="titleMarker">|</h3>
+            <h3 class="titleMarker pt120">|</h3>
             <h3 class="h3blackLight">our advantages</h3>
             <h2 class="h2blackBold mb160">Why choose us?</h2>
-            <div class="leftAdv mb245 clear">
+            <div class="leftAdv clear">
                 <div class="advItem">
                     <span class="icon-adv1"><span class="path1"></span><span class="path2"></span></span>
                     <span class="title">FAVORABLE INVESTMENTS</span>
@@ -457,26 +462,18 @@
                     </div>
                 </div>
             </div>
-            <div class="info clear">
-                <span>Our project is a most interesting startup which is directed to work with the cryptocurrency exchange market.</span>
-                <span>We believe that was the future. About popularity and benefit of cooperation with our cryptocurrency project it is possible to know by the chart of income which promptly grows.</span>
-                <span>Investment tier is actively increases, and it indicates about interest of investors and about successes of our activity.</span>
-            </div>
-            <div class="graph mb280 clear">
-                <div class="chart">
-                    <ul>
-                        <li><a href="#">1h</a></li>
-                        <li><a href="#">12h</a></li>
-                        <li><a href="#">1d</a></li>
-                        <li><a href="#">1w</a></li>
-                        <li><a href="#">1m</a></li>
-                        <li><a href="#">3m</a></li>
-                        <li><a href="#">1y</a></li>
-                        <li><a href="#">all</a></li>
-                        <div class="graphAction">
+            <div class="mt130">
+                <div class="info clear inline">
+                    <span class="mb30">Our project is a most interesting startup which is directed to work with the cryptocurrency exchange market.</span>
+                    <span class="mb30">We believe that was the future. About popularity and benefit of cooperation with our cryptocurrency project it is possible to know by the chart of income which promptly grows.</span>
+                    <span class="pb25">Investment tier is actively increases, and it indicates about interest of investors and about successes of our activity.</span>
+                </div>
+                <div class="graph clear  inline">
+                    <div class="chart">
+                        <div class="graphAction" style="background-image: url(img/png/graphImg.png)">
                             <!--место для графика-->
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -575,5 +572,11 @@
         </div>
     </div>
 </footer>
+<div type="button" class="email-bt">
+    <div class="text-call">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <span>Обратная<br>связь</span>
+    </div>
+</div>
 </body>
 </html>

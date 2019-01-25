@@ -173,12 +173,20 @@ header .communication a[href*="tel"] {
     font-weight: 600;
 }
 
+header .communication a[href*="tel"]:hover {
+    opacity: 0.5;
+}
+
 header .communication a[href*="mail"] {
     font-size: 17px;
     line-height: 19.72px;
     color: #ff9001;
     font-weight: 300;
     letter-spacing: 0.050em;
+}
+
+header .communication a[href*="mail"]:hover {
+    text-decoration: none;
 }
 
 header .communicationFloat {
@@ -243,8 +251,10 @@ header .menu .menuAction {
     border: 2px solid #ff6b28;
     width: 140px;
     text-align: center;
-    box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.33);
-    /*display: none;*/
+    box-shadow: 0px 3px 21px 15px rgba(0, 0, 0, 0.53);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
 .date {
@@ -389,45 +399,63 @@ header .menu ul li:first-child {
     margin-bottom: 90px;
 }
 
-.cards div div:nth-child(1) {
-    font-size: 35px;
+.cards .card div:nth-child(1) {
+    font-size: 70px;
     line-height: 40px;
     color: #ffffff;
     letter-spacing: 0.025em;
     font-weight: 600;
+    float: right;
+    opacity: 0.5;
 }
 
-.cards div div:nth-child(2) {
-    font-size: 400%;
+.cards .card div:nth-child(2) {
+    font-size: 600%;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
-.cards div div:nth-child(3) {
+.cards .card div:nth-child(3) {
     font-size: 45px;
     line-height: 40px;
     color: #ff9001;
     letter-spacing: 0.025em;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.cards div div:nth-child(4) {
+.cards .card div:nth-child(4) {
     font-size: 18px;
     line-height: 30px;
     color: #ff692a;
     letter-spacing: 0.025em;
     font-weight: 300;
+    display: inline-block;
 }
 
-.cards div div:nth-child(5) {
+.cards .card div:nth-child(5) {
     font-size: 18px;
     line-height: 30px;
     color: #ff692a;
     letter-spacing: 0.025em;
     font-weight: 600;
+    display: inline-block;
 }
 
-.card {
+.cards .card {
     border: 1px solid #ffffff;
-    margin: 22px;
+    margin: 10px 22px 110px 22px;
+    width: 260px;
+    height: 340px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.galery .item {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .mb330 {
@@ -453,11 +481,14 @@ header .menu ul li:first-child {
 .calcWhiteImg {
     background-color: rgba(255, 255, 255, 0.7);
     width: 1176px;
-    height: 760px;
+    height: 640px;
     padding: 60px 80px;
     box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.53);
 }
 
+.mt210 {
+    margin-top: 210px;
+}
 .h3blackLight {
     font-size: 18px;
     line-height: 70px;
@@ -496,6 +527,51 @@ header .menu ul li:first-child {
     color: #05141b;
     letter-spacing: 0.025em;
     font-weight: 600;
+}
+
+.irs--flat .irs-bar {
+    background-color: #ff9001;
+    height: 18px;
+}
+
+.irs--flat .irs-line {
+    background-color: black;
+    height: 18px;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    color: #ff9001;
+    background-color: black;
+    border-radius: 0;
+    line-height: 2;
+}
+
+.irs--flat .irs-handle.state_hover > i:first-child, .irs--flat .irs-handle:hover > i:first-child {
+    background-color: #ff692a;
+}
+
+.irs--flat .irs-handle > i:first-child {
+    background-color: black;
+    top: 3px;
+    left: 1%;
+    width: 18px;
+    border-radius: 50%;
+    border: 2px solid #ff692a;
+    background-image: url(../img/png/calcWheel.png);
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+    color: black;
+    background-color: transparent;
+}
+
+.irs--flat .irs-grid-text {
+    display: none;
+}
+
+.irs--flat .irs-grid-pol {
+    background-color: black;
+    z-index: 1;
 }
 
 .plan select {
@@ -608,7 +684,13 @@ header .menu ul li:first-child {
     width: 211px;
     height: 56px;
     background-color: #06141b;
-    box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 3px 21px 8px rgba(0, 0, 0, 0.22);
+}
+
+.btnFillColor3:hover {
+    background-color: #ff692a;
+    color: #000;
+    border: 2px solid black;
 }
 
 .mb410 {
@@ -1018,6 +1100,10 @@ iframe .ytp-cued-thumbnail-overlay {
     left: -215px;
 }
 
+.pt120 {
+    padding-top: 120px;
+}
+
 .wheelYellow {
     position: relative;
     top: -150px;
@@ -1049,40 +1135,37 @@ iframe .ytp-cued-thumbnail-overlay {
     margin-top: 130px;
 }
 
-.action .info {
+.action .info span {
     font-size: 15px;
     line-height: 24px;
     color: #ffffff;
     letter-spacing: 0.025em;
     font-weight: 300;
-    float: left;
     width: 330px;
     display: block;
+}
+
+.pb25 {
+    padding-bottom: 55px;
+}
+
+.mb30 {
+    margin-bottom: 40px;
 }
 
 .mb35 {
     margin-top: 35px;
 }
 
-.graph .chart li {
-    display: inline-block;
-    background-color: #ffa42f;
-    width: 35px;
-    height: 23px;
-    text-align: center;
+.graph .chart .graphAction {
+    width: 764px;
+    height: 378px;
+    float: right;
 }
 
-.chart li a {
-    text-decoration: none;
+.mt130 {
+    margin-top: 130px;
 }
-
-/*.action .graphAction {*/
-/*width: 770px;*/
-/*height: 400px;*/
-/*border: 1px solid #ffffff;*/
-/*float: left;*/
-/*margin-left: 500px;*/
-/*}*/
 
 .mb280 {
     margin-bottom: 280px;
@@ -1215,6 +1298,10 @@ footer .copyright div {
     position: relative;
 }
 
+.footMenu a:hover {
+    border: 2px solid #ff692a;
+}
+
 .footMenu .footMenuWheel {
     content: "";
     display: block;
@@ -1265,6 +1352,138 @@ footer .footContact p {
     margin-bottom: 25px;
 }
 
+/*кнопка обратной связи*/
+
+.email-bt {
+    background:#F95C18;
+    border: 2px solid #F95C18;
+    border-radius: 50%;
+    box-shadow: 0 8px 10px rgba(249,92,24,0.3);
+    cursor: pointer;
+    height: 68px;
+    text-align: center;
+    width: 68px;
+    position: fixed;
+    right: 55px;
+    bottom: 140px;
+    z-index: 999;
+    transition:.3s;
+    -webkit-animation: email-an linear 1s infinite;
+    animation: email-an linear 1s infinite;
+}
+
+.email-bt .text-call{
+    height:68px;
+    width:68px;
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+}
+
+.email-bt .text-call span {
+    text-align: center;
+    color:#F95C18;
+    opacity: 0;
+    font-size: 0;
+    position:absolute;
+    right: 4px;
+    top: 22px;
+    line-height: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: opacity .3s linear;
+}
+
+.email-bt .text-call:hover span {
+    opacity: 1;
+    font-size: 11px;
+}
+.email-bt:hover i {
+    display:none;
+}
+
+.email-bt:hover {
+    z-index:1;
+    background:#fff;
+    transition:.3s;
+}
+.email-bt:hover i {
+    color:#38a3fd;
+    font-size:40px;
+    transition:.3s;
+}
+.email-bt i {
+    color:#fff;
+    font-size:29px;
+    transition:.3s;
+    line-height: 66px;
+}
+
+.email-bt i  {
+    -webkit-animation: opsimple 3s infinite;
+    animation: opsimple 3s infinite;
+}
+
+@-webkit-keyframes email-an {
+    0% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 0 rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+    }
+    40% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 15px rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+    }
+    80% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 26.7px rgba(249,92,24,0.067)
+    }
+    100% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 40px rgba(249,92,24,0.0)
+    }
+}@keyframes email-an {
+     0% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 0 rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+     }
+     40% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 15px rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+     }
+     80% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 26.7px rgba(249,92,24,0.067)
+     }
+     100% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 40px rgba(249,92,24,0.0)
+     }
+ }
+
+@keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* конец кнопки звязи */
+
 footer {
     background-color: #05141b;
 }
@@ -1277,14 +1496,13 @@ footer .container .colomn {
     width: 25%;
     margin: 100px 0px 100px 0px;
 }
-
 /*Страница =Referral=*/
 
 /*Шапка Реферала (referral/header)*/
 
 header .RefHeadBackImg {
     width: 1920px;
-    height: 522px;
+    height: 578px;
     position: absolute;
     z-index: -1;
     left: 50%;
@@ -1323,16 +1541,17 @@ header .RefHeadBackImg {
     letter-spacing: 0.025em;
 }
 
-.p2l2 {
+.p212 {
     display: flex;
     justify-content: space-between;
     align-content: center;
 }
 
-.p2l3 {
+.p213 {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin-top: 40px;
 }
 
 .user {
@@ -1391,6 +1610,10 @@ header .RefHeadBackImg {
     text-transform: uppercase;
 }
 
+.user a:hover {
+    text-decoration: none;
+}
+
 .lastSeen span:nth-child(odd) {
     font-size: 15px;
     line-height: 20px;
@@ -1429,6 +1652,10 @@ header .RefHeadBackImg {
     text-align: center;
     line-height: 110px;
     vertical-align: middle;
+}
+
+.btnClr1:hover, .btnClr2:hover{
+    font-size: 120%;
 }
 
 .btnClr2 {
@@ -1495,9 +1722,12 @@ header .RefHeadBackImg {
     margin: 5px;
 }
 
+.balance .balAmount {
+    border-left: 2px solid #4d5254;
+}
+
 .currencyAmount {
-    border: 2px solid #4d5254;
-    vertical-align: center;
+    vertical-align: middle;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1520,39 +1750,39 @@ header .RefHeadBackImg {
     width: 25%;
     background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid #4d5254;
+    border-left: none;
 }
 
 .contentMenu a {
     font-size: 15px;
-    line-height: 19.72px;
+    line-height: 40px;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.010em;
     font-weight: 600;
     text-decoration: none;
+    vertical-align: middle;
+    margin: 0px 10px 0px 10px;
 }
 
-.contentMenu li:nth-child(7) a {
-    font-size: 15px;
-    line-height: 19.72px;
-    color: #05141b;
-    text-transform: uppercase;
-    letter-spacing: 0.010em;
-    font-weight: 600;
-    text-decoration: none;
+.contentMenu li:hover {
     background-color: #ff692a;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+}
+
+.contentMenu a:hover {
+    color: #000;
 }
 
 .contentMenu {
     border: 2px solid #4d5254;
     background-color: #05141b;
     box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
-
 }
 
 .contentMenu li {
     display: inline-block;
-    margin: 10px;
+    height: 40px;
 }
 
 /*Контент страницы Referral (refferal/Content)*/
@@ -1570,6 +1800,7 @@ header .RefHeadBackImg {
     position: relative;
     z-index: 1;
 }
+
 
 
 .h1RefWhite {
@@ -1791,11 +2022,16 @@ select#monthFrom, select#monthTo {
 
 /*Таблица с рефералами клиента*/
 
+.mt35 {
+    margin-top: 35px;
+}
 .yrRefTableTxt1 {
     font-size: 17px;
     color: #ffffff;
     font-weight: 600;
-    letter-spacing: 0.025em
+    letter-spacing: 0.025em;
+    vertical-align: middle;
+    /*line-height: 50px;*/
 }
 
 .yrRefTableTxt2 {
@@ -1803,24 +2039,32 @@ select#monthFrom, select#monthTo {
     color: #ff692a;
     font-weight: 600;
     letter-spacing: 0.025em;
+    vertical-align: middle;
 }
 
 .yrRefTableTxt3 {
     font-size: 15px;
     color: #ff9001;
     letter-spacing: 0.025em;
+    vertical-align: middle;
 }
 
 .yrRefTableTxt4 {
     font-size: 17px;
     color: #bebebe;
     letter-spacing: 0.025em;
+    vertical-align: middle;
 }
 
 .refTableAction {
     width: 50px;
-    padding: 9px;
+    text-align: center;
+    /*padding: 9px;*/
     cursor: pointer;
+}
+
+.bung {
+    padding: 10px 0px 13px 0px;
 }
 
 .plus {
@@ -1829,24 +2073,46 @@ select#monthFrom, select#monthTo {
     background-color: #444240;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(../img/png/plus.png);
+}
+
+.minus {
+    width: 32px;
+    height: 32px;
+    background-color: #fa7805;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/png/minus.png);
+}
+
+.plusMinus {
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    /*inline-height: 50px;*/
+    color: white;
 }
 
 .yrRefTable ul {
     width: 100%;
     display: table;
     border: 2px solid #4d5254;
-    border-bottom: none;
-    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+    border-top: none;
+    box-shadow: 0 11px 21px 0 rgba(0, 0, 0, 0.53);
 }
 
 .yrRefTable ul li {
     display: table-row;
+}
 
+.yrRefTable ul li.tableInf div {
+    border-top: none;
+    line-height: 50px;
 }
 
 .yrRefTable ul li div {
     display: table-cell;
-    border-bottom: 2px solid #4d5254;
+    border-top: 2px solid #4d5254;
 }
 
 /*Кнопки навигации*/
@@ -1866,7 +2132,7 @@ select#monthFrom, select#monthTo {
     text-align: center;
 }
 
-.pages div.active{
+.pages div.active {
     font-size: 17px;
     line-height: 38px;
     color: #000000;

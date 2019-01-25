@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referrals</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='js/owl.carousel.min.js'></script>
+    <script type='text/javascript' src='js/script.js'></script>
 </head>
 <body>
 <Header>
@@ -24,7 +28,7 @@
                 <li><span class="headMenuWheel"></span><a href="#">support</a></li>
             </ul>
         </div>
-        <div class="p2l2">
+        <div class="p212">
             <div class="logo logoFloat">
                 <div class="mainLogo inline invisLink">
                     <img src="img/png/logoGrad.png" alt="logo">
@@ -68,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="p2l3">
+        <div class="p213">
             <div class="user clear">
                 <div class="userPhoto inline" style="background-image: url(img/png/userPhoto1.png);"></div>
                 <div class="inline">
@@ -102,24 +106,25 @@
                 </div>
             </div>
             <div>
-                <div class="currencyAmount">
-                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span>
+                <div class="currencyAmount tableBorderBottom">
+                    <span style="background-image: url(img/png/pm.png)" class="currency"></span>
+                    <span class="refBalTxt">1520.32$</span>
                 </div>
                 <div class="currencyAmount">
-                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span class="refBalTxt">1520.32$</span>
+                    <span style="background-image: url(img/png/P.png)" class="currency"></span><span class="refBalTxt">1520.32$</span>
                 </div>
             </div>
             <div>
-                <div class="currencyAmount">
-                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
+                <div class="currencyAmount tableBorderBottom">
+                    <span style="background-image: url(img/png/A.png)" class="currency"></span><span
                         class="refBalTxt">1520.32$</span></div>
                 <div class="currencyAmount">
-                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
+                    <span style="background-image: url(img/png/B.png)" class="currency"></span><span
                         class="refBalTxt">1520.32$</span></div>
             </div>
             <div>
-                <div class="currencyAmount">
-                    <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
+                <div class="currencyAmount tableBorderBottom">
+                    <span style="background-image: url(img/png/B.png)" class="currency"></span><span
                         class="refBalTxt">1520.32$</span></div>
                 <div class="currencyAmount">
                     <span style="background-image: url(img/png/pm.png)" class="currency"></span><span
@@ -225,13 +230,13 @@
                 </li>
             </ul>
         </div>
-        <div class="yrRefTable mb70">
+        <div class="yrRefTable mb50 mt35">
             <h3 class="titleMarker">|</h3>
             <h3 class="h3RefWhiteBold taCenter">Your Referrals</h3>
             <ul>
                 <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
-                    <div>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -244,9 +249,26 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -259,9 +281,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -274,9 +312,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -289,9 +343,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -304,9 +374,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -319,9 +405,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -334,9 +436,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -349,9 +467,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -364,9 +498,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -379,9 +529,25 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
@@ -394,15 +560,78 @@
                         <span class="yrRefTableTxt4">No deposit eat</span>
                     </div>
                 </li>
-                <li>
-                    <div class="refTableAction"><span class="plus block" style="background-image: url(img/png/plus.png)"></span></div>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
                     <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
                         <span class="yrRefTableTxt1">Nickname:</span>
                         <span class="yrRefTableTxt2">makhael3478</span>
                     </div>
                     <div>
                         <span class="yrRefTableTxt1">E-mail:</span>
                         <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
+                    <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="refTableAction"><span class="plus plusMinus"></span></div>
+                    <div class="bung">
+                        <span class="yrRefTableTxt1">Nickname:</span>
+                        <span class="yrRefTableTxt2">makhael3478</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">E-mail:</span>
+                        <a href="mailto:michahel3578@gmail.com" class="yrRefTableTxt3">michahel3578@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1">Status:</span>
+                        <span class="yrRefTableTxt4">No deposit eat</span>
+                    </div>
+                </li>
+
+                <li class="tableInf" style="display: none">
+                    <div class="refTableAction"></div>
+                    <div>
+                        <span class="yrRefTableTxt4">User referal:</span>
+                        <span class="yrRefTableTxt4">1 active of 1 on level</span>
+                    </div>
+                    <div>
+                        <span class="yrRefTableTxt1"></span>
+                        <a href="#" class="yrRefTableTxt3"></a>
                     </div>
                     <div>
                         <span class="yrRefTableTxt1">Status:</span>
